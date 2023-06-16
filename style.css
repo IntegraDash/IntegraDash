@@ -1,0 +1,40 @@
+:root {
+
+--lato: 'Lato', sans-serif;
+--azul: #003D73;
+
+}
+
+.menu_grande {
+    width: 20%;
+    height: 100vh;
+    background-color: var(--azul);
+
+}
+
+.menu_pequeno {
+    width: 4%;
+    height: 100vh;
+    background-color: red
+
+}
+.menu_pequeno {
+    width: 4%;
+    height: 100vh;
+    background-color: red
+
+}
+
+.complemento_menu_pequeno {
+
+    width: 16%;
+    height: 100vh;
+    background-color: rgb(88, 48, 48)
+
+
+}
+
+.menu_total {
+    display: flex;
+   
+}
