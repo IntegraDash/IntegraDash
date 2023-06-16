@@ -10,6 +10,7 @@ article {
     background-color: #003D73;
     display: flex;
 
+
 }
 
 .logo {
@@ -26,9 +27,14 @@ article {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    align-items:flex-start;
-    padding: 20% 0 20% 20%;
+    align-items: flex-start;
+    padding: 20% 0 5% 20%;
 
+}
+
+.linha-horizontal {
+    width: 80%;
+    border: 1px solid #ffffff;
 }
 
 article:hover {
@@ -40,13 +46,39 @@ article:hover {
         justify-content: space-between;
         flex-direction: column;
         align-items: flex-start;
-        padding: 20% 0 20% 20%;
+        padding: 20% 0 0 20%;
     }
 
     .menu_fechado {
         display: none;
     }
 }
+
+#divBusca{
+    background-color:#053155;
+    border:none;
+    
+    width:80%;
+    margin: 10% 0 10% 0;
+  }
+
+  #divBusca img {
+    float: left;
+    width: 20%;
+    padding: 2% 2% 2% 2%;
+  }
+  
+  #txtBusca{
+    float:right;
+    background-color:transparent;
+    padding-left:1%;
+    font-style:italic;
+    font-size:15px;
+    border:none;
+    color: #ffffff;
+    width:80%;
+    height: 100%;
+  }
 
 .conteudo {
     display: flex;
@@ -58,11 +90,18 @@ article:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    color: white;
+
 }
 
-.navegacao > a > img {
-    background-color: white;
+.navegacao a,
+.config a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 10% 0 10% 0;
+
 }
 
 .config {
@@ -77,6 +116,6 @@ article:hover {
 
 
 img {
-    width: 35px;
-    
+    width: 30px;
+
 }
