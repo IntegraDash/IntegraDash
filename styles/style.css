@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: var(--branco);
+}
+
+:root {
+    --azulC: #003D73;
+    --azulE: #053155;
+    --azulBB: #1B77C2;
+    --branco: #ffffff;
+    --verde: #4ECB71;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-color: var(--azulC);
+
+    width: 20%;
+    height: 100vh;
+
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.logo {
+    width: 50px;
+}
+
+.p-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 2px solid #ffffff;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.p-menu.s {
+    border-top: none;
+}
+
+.lupa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lupa button {
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    right: 50px;
+    top: 2px;
+    position: relative;
+}
+
+
+.icone-lupa {
+    width: 20px;
+}
+
+.lupa input {
+    display: flex;
+    position: absolute;
+    width: 164px;
+    height: 36px;
+    background-color: var(--azulE);
+    border: none;
+}
+
+.btn-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    width: 164px;
+    height: 36px;
+    background-color: var(--azulC);
+    border: none;
+}
+
+.i-home {
+    width: 26px;
+}
+
+.home {
+    background-color: var(--azulBB);
+}
+
+.i-analises, .i-cavalo, .i-coracao, .i-alertas {
+    width: 20px;
+    margin-left: 4px;
+}
+
+input[type=range] {
+    width: 30px;
+}
+
+
+.barra {
+    --webkit-appearance: none;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.barra::-webkit-slider-runnable-track {
+    background: var(--verde);
+    border: none;
+    border-radius: 20px;
+}
+
+.barra::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: var(--azulE);
+}
+
+.barra:focus {
+    outline: none;
+}
+
+.barra::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+
+
+
+.principal-home {
+    overflow-y: scroll;
+}
+
+
+
+/* https://pt.stackoverflow.com/questions/265316/range-mudar-cor-da-barra-de-progresso-no-chrome */
