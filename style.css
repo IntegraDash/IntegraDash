@@ -1,0 +1,110 @@
+:root {
+  --fonte-principal: 'Lato', sans-serif;
+  --azul: #003D73;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  margin: 0;
+  padding: 0;
+  background-color: #EEF3FA;
+}
+
+.container {
+  display: flex;
+}
+
+.menu {
+  width: 200px;
+  height: 95vh;
+  background-color: var(--azul);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo_cima img {
+  width: 48px;
+  height: 48px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+nav ul li {
+  margin-bottom: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.corpo {
+  flex: 1;
+  padding: 55px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buscador {
+  display: flex;
+  align-items: center;
+}
+
+.buscador input[type="text"] {
+  width: 300px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.add-btn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #003D73;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.folders {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.folder {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.folder img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.botao-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.botao-links a {
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+}
