@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <main>
@@ -25,11 +30,13 @@
                             
                             <div class="menu_alinhamento">
                         
-                            <img src="img/Home_icone.png" alt="icone home-casa">
+                            <img src="img/Home_icone.png" class="icone_home" alt="icone home-casa">
                             <img src="img/Analises_icone.png" alt="icone analise">
                             <img src="img/Estrategia_icone.png" alt="icone estrategia - cavalo">
                             <img src="img/Favoritos_icone.png" alt="icone favorito - coracao">
-                            <img src="img/Alerta_icone.png" alt="icone alerta - alvo">
+                            <img src="img/Alerta_icone.png" class="icone_alerta"   alt="icone alerta - alvo">
+
+                                <!-- como ancorar uma imagem -->
 
                             </div>
 
@@ -48,18 +55,46 @@
                 <div class="complemento_menu_pequeno">
 
                     <h2>Favoritos</h2>
-                    <h3 class="favoritos_complemento_menu_pequeno">Favoritos</h3>
+                    <h3 class="favoritos_complemento_menu_pequeno">Escolha sua planta</h3>
+
+                    <form>
+            
+                        <label for="plantas"></label>
+
+                        <select class="plantas" name="plantas" id="plantas">
+                     
+                          <option value="Taubate">Taubaté</option>
+                          <option value="Curitiba">Curitiba</option>
+                          <option value="Sao_Bernardo_do_Campo">São Bernardo do Campo</option>
+                          
+                        </select>
+
+                        
+                    </form>
 
                 </div>
 
-                <div class="corpo_da_pagina">
 
+
+                <div class="corpo_da_pagina">
+                    <div class="itens_salvos_+_botao_add">
 
                     <h2>Favoritos</h2>
                     <h3 class="itens_salvos" >Itens Salvos</h3>
+                    <img src="img/botao add.png" class="botao_add" alt="botao add favoritos">
 
+                    </div>
+
+                    <div class="imagem_vitor">
+
+
+                    </div>
 
                 </div>
+
+         
+                   
+            
 
             </div>
            
