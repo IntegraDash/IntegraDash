@@ -141,15 +141,15 @@ img {
     width: 30%;
 }
 
-.planta,
-.perfil {
+.planta {
     
     border-radius: 10px;
     background-color: #ffffff;
     display: flex;
     align-items: center;
-    width: 30vh;
+    width: 16%;
     height: 10vh;
+    
 }
 
 .planta img {
@@ -178,7 +178,7 @@ ul{
     list-style: none;
 }
 
-img{
+.select img{
     width: 20px;
 }
 
@@ -188,9 +188,9 @@ input[type="checkbox"]{
 
 nav{
     background-color: rgba(16, 16, 16, .5);
-    width: 5%;
-    height: 40%;
-    top: -350px;
+    width: 15.2%;
+    height: 23.9%;
+    top: -40%;
     position: absolute;
     transition: all .5s;
 }
@@ -208,8 +208,11 @@ ul{
 a{
     
     display: block;
-    padding: 20px 5px;
+    padding: 10px 0;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 a:hover{
@@ -218,7 +221,12 @@ a:hover{
 }
 
 label{
-    padding: 15px;
-    position: absolute;
+    padding: 5px;
+    position: relative;
     z-index: 1;  
 }
+
+.tamanho_img img {
+    width: 15%;
+}
+
