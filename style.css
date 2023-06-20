@@ -7,6 +7,7 @@
 body {
     background-color: #EAEFF6;
     display: flex;
+    font-size: 100%;
 }
 
 article {
@@ -141,7 +142,8 @@ img {
     width: 30%;
 }
 
-.planta {
+.planta,
+.perfil {
     
     border-radius: 10px;
     background-color: #ffffff;
@@ -153,16 +155,17 @@ img {
 }
 
 .planta img {
-    width: 10vh;
+    width: 70%;
 }
 
  
 .perfil img{
-    width: 7vh;
+    width: 70%;
 }
 
 .up {
     width: 100%;
+    margin-top: 5%;
     display: flex;
     align-items: flex-start;
     flex-direction: row;
@@ -187,10 +190,11 @@ input[type="checkbox"]{
 }
 
 nav{
-    background-color: rgba(16, 16, 16, .5);
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 10px;
     width: 15.2%;
-    height: 23.9%;
-    top: -40%;
+    height: 27%;
+    top: -45%;
     position: absolute;
     transition: all .5s;
 }
@@ -209,15 +213,15 @@ a{
     
     display: block;
     padding: 10px 0;
-    color: white;
+    color: #003D73;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 a:hover{
-    background-color: rgb(176,224,230);
-    color: black;
+    background-color: #003D73;
+    color: white;
 }
 
 label{
