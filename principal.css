@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;    
+ 
+
+}
+.paginaprincipal{
+
+display: flex;
+margin-top: 290px;
+justify-content: space-around;
+font-size: 80px;
+height: 216px;
+}
