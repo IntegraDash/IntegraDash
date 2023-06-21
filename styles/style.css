@@ -6,17 +6,23 @@
     color: var(--branco);
 }
 
+body {
+    background-color: var(--azulBranco);
+}
+
 :root {
     --azulC: #003D73;
     --azulE: #053155;
     --azulBB: #1B77C2;
     --branco: #ffffff;
     --verde: #4ECB71;
+    --preto: #000000;
+    --azulBranco: #EAEFF6;
 }
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 100vh;
 }
 
@@ -32,6 +38,8 @@ aside {
 
     padding-left: 70px;
     padding-right: 70px;
+
+    box-shadow: 10px 0px 10px rgb(0 61 115 / 40%);
 }
 
 .logo {
@@ -53,29 +61,37 @@ aside {
     border-top: none;
 }
 
+.p-menu.s.s2 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+    justify-content: space-between;
+}
+
 .lupa {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .lupa button {
     border: none;
     background-color: transparent;
     padding: 10px;
-    right: 50px;
+    left: 0;
     top: 2px;
-    position: relative;
+    position: absolute;
+    cursor: pointer;
 }
 
 
 .icone-lupa {
-    width: 20px;
+    width: 15px;
 }
 
 .lupa input {
     display: flex;
-    position: absolute;
     width: 164px;
     height: 36px;
     background-color: var(--azulE);
@@ -143,11 +159,108 @@ input[type=range] {
 }
 
 
+/* TELA CENTRAL / PRINCIPAL */
 
 .principal-home {
     overflow-y: scroll;
+    width: 80%;
+    padding: 60px;
 }
 
 
+.centro-p-linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.centro-p-linha span, ul, li {
+    display: flex;
+    color: var(--preto);
+}
+
+.lupa .lupa-input-centro {
+    background-color: var(--branco);
+    border-radius: 10px;
+    color: var(--preto);
+    height: 40px;
+    padding-left: 40px;
+}
+
+
+.icone-lupa-principal {
+    width: 20px;
+}
+
+.lupa.central {
+    justify-content: flex-start;
+}
+
+.alert {
+    border-radius: 10px;
+    background-color: var(--branco);
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert img {
+    width: 25px;
+}
+
+
+.inicio-lateral {
+    display: flex;
+    gap: 25px;
+}
+
+.centro-p-linha ul {
+    gap: 15px;
+}
+
+.centro-p-linha span {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.centro-p-linha ul li{
+    width: 80px;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--branco);
+    font-weight: 700;
+}
+
+.centro-p-linha ul li:nth-child(3) {
+    background-color: var(--azulC);
+    color: var(--branco);
+}
+
+.plus {
+    display: flex;
+    gap: 5px;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    color: var(--preto);
+    background-color: var(--branco);
+    width: 200px;
+    height: 55px;
+    justify-content: space-around;
+}
+
+.foto-user {
+    height: 40px;
+   
+}
 
 /* https://pt.stackoverflow.com/questions/265316/range-mudar-cor-da-barra-de-progresso-no-chrome */
