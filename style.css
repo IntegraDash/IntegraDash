@@ -2,20 +2,15 @@
     margin: 0;
 box-sizing: border-box;
 font-family: var(--lato);
-
-
-.}
-
+}
 
 :root {
-
 --lato: 'Lato', sans-serif;
 --azul: #003D73;
 --azul_teste: #014683;
 --branco_fundo: #ECF1F8;
 --branco_fonte: #fff;
 --azul_fundo: #053155;
-
 }
 
 .menu_total {
@@ -45,15 +40,10 @@ font-family: var(--lato);
     gap: 15px;
     align-items: center;
     margin-bottom: 240px;
-
 }
 
 .menu_alinhamento img {
-
     width: 80%;
-
-
-    
 }
 
 .rodape_menu_pequeno {
@@ -61,47 +51,39 @@ font-family: var(--lato);
     flex-direction: column;
     gap: 15px;
     margin-bottom: 60px;
-
 }
-
 
 .corpo_da_pagina {
     width: 80%;
     height: 100vh;
     background-color: var(--branco_fundo);
     padding: 3% 4%;
-
 }
 
 .itens_salvos {
 padding: 15px 0;
 font-weight: normal;
 margin-top: 10px;
-
 }
 
 .favoritos_complemento_menu_pequeno{
     padding: 25px 0 10px 0;
     font-weight: 400;
-
 }
 
 .logo_integradash {
     width: 70%;
     margin: 20% 20%;
-
 }
 
 .rodape_menu_pequeno img {
-    width: 30%;
- 
+    width: 80%;
 }
 
 .rodape_menu_pequeno {
    display: flex;
    flex-direction: column;
    align-items: center;
- 
 }
 
 h2 {
@@ -133,7 +115,6 @@ might: 600px;
 
 .menu_alinhamento .icone_alerta {
     width: 80% ;
-    
     }
 
 .imagem_vitor {
@@ -145,19 +126,16 @@ might: 600px;
     font-weight: 700;
     align-items: center;
     justify-content: space-around;
-
 }
 
 .corpo_da_pagina {
     display: flex;
     justify-content: space-between;
-    
 }
 
 .corpo_da_pagina img {
     width: 80%;
 }
-
 
 .foto_perfil {
     border-radius: 10%;
@@ -167,8 +145,6 @@ might: 600px;
 .imagem_vitor .foto_perfil {
     width: 20%;
     height: 65%;
-    
-
 }
 
 
@@ -177,22 +153,34 @@ might: 600px;
     width: 6%;
     position: relative;
     right: 7%;
-
 }
 
 .imagem_vitor p {
     max-width: 50%;
- 
 }
 
 a:hover {
     background-color: rgb(55, 139, 218)
-
 }
 
 a {
-    height: 20px;
+height: 20px;
 width: 20px;
-
-
 }
+
+@media screen and (max-width: 911px) {
+    .servicos > div > div:nth-child(2) {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu_barras {
+        display: flex;
+    }
+
+    #menu_links {
+        display: none;
+    }
+}
+
