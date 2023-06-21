@@ -44,13 +44,13 @@ font-family: var(--lato);
     flex-direction: column;    
     gap: 15px;
     align-items: center;
-    margin-bottom: 350px;
+    margin-bottom: 240px;
 
 }
 
 .menu_alinhamento img {
 
-    width: 40%;
+    width: 80%;
 
 
     
@@ -69,7 +69,7 @@ font-family: var(--lato);
     width: 80%;
     height: 100vh;
     background-color: var(--branco_fundo);
-    padding: 3% 3%;
+    padding: 3% 4%;
 
 }
 
@@ -87,13 +87,13 @@ margin-top: 10px;
 }
 
 .logo_integradash {
-    width: 55%;
+    width: 70%;
     margin: 20% 20%;
 
 }
 
 .rodape_menu_pequeno img {
-    width: 50%;
+    width: 30%;
  
 }
 
@@ -106,6 +106,7 @@ margin-top: 10px;
 
 h2 {
     font-size: 20px;
+    font-weight: 900;
 }
 
 h3 {
@@ -119,21 +120,79 @@ h3 {
     font-size: 15px;
 }
 
-.botao_add {
-    width: 15%;
+.corpo_da_pagina .botao_add {
+    width: 40%;
+    margin-top: 10%;
 }
 
 .menu_alinhamento .icone_home {
-width: 50% ;
+width: 110% ;
+might: 600px;
 
 }
 
 .menu_alinhamento .icone_alerta {
-    width: 50% ;
+    width: 80% ;
     
     }
 
+.imagem_vitor {
+    background-color: white;
+    width: 18%;
+    height: 10%;
+    border-radius: 10%;
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.corpo_da_pagina {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.corpo_da_pagina img {
+    width: 80%;
+}
 
 
+.foto_perfil {
+    border-radius: 10%;
+    
+}
+
+.imagem_vitor .foto_perfil {
+    width: 20%;
+    height: 65%;
+    
+
+}
 
 
+.imagem_vitor .seta {
+    height: 10%;
+    width: 6%;
+    position: relative;
+    right: 7%;
+
+}
+
+.imagem_vitor p {
+    max-width: 50%;
+ 
+}
+
+a:hover {
+    background-color: rgb(55, 139, 218)
+
+}
+
+a {
+    height: 20px;
+width: 20px;
+
+
+}
