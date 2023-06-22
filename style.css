@@ -150,6 +150,7 @@ img {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding: 3% 5%;
 }
 
 .planta,
@@ -175,11 +176,20 @@ img {
 
 .up {
     width: 100%;
-    margin-top: 5%;
+    background-color: bisque;
     display: flex;
     align-items: flex-start;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.posicionamento_2 {
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 a{
@@ -246,19 +256,36 @@ label{
     width: 15%;
 }
 
+.posicionamento {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+
+}
+
 .options {
+    background-color: #006780;
     
-    
-    width: 68%;
+    width: 100%;
+    height: 25%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
  }
 
+ .posicionamento_1 {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+
  .posicionamento_options{
     display: flex;
-    margin-top: 3%;
+    
  }
  .posicionamento_options a{
     padding-right: 25%;
@@ -271,17 +298,67 @@ label{
 }
 
 .posicionamento_producao {
-    background-color: aquamarine;
-    border: 1px dotted grey;
+    
     display: flex;
-    width: 20%;
-    height: 50%;
+    justify-content: space-between;
+    width: 35%;
+    height: 25%;
 }
 
 .producao,
 .custo {
     
-    border-style: double;
+    border: 1px double;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#linha-vertical {
+    height: 70%;
+    border-right: 1px solid red;
+}
+
+#circulo {
+    background: lightblue;
+    border-radius: 50%;
+    width: 7%;
+    height: 70%;
+}
+
+.posicionamento_informacoes {
+    background-color: aquamarine;
     width: 100%;
-    height: 40%;
+    height: 65%;
+    display: flex;
+    justify-content: space-around;
+   
+
+}
+
+.posicionamento_grafico {
+    border: 1px solid yellowgreen;
+    width: 70%;
+    height: 100%;
+}
+
+.grafico {
+    background-color: aquamarine;
+    width: 60%;
+
+}
+
+.posicionamento_carros {
+    background-color: antiquewhite;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.demonstrativo {
+    border: 1px solid blueviolet;
+    width: 90%;
+    height: 30%;
 }
