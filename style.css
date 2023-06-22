@@ -10,7 +10,7 @@ body {
   background-color: #EEF3FA;
 }
 
-.container {
+.menu-master {
   display: flex;
 }
 
@@ -41,6 +41,7 @@ nav ul li {
 }
 
 nav ul li a {
+  vertical-align: 0.875em;
   color: white;
   text-decoration: none;
 }
@@ -107,4 +108,8 @@ header {
   color: white;
   text-decoration: none;
   margin-top: 10px;
+}
+
+.menu .icon i {
+  font-size: 20px; /* Tamanho dos ícones */
 }
