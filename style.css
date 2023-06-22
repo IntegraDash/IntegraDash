@@ -150,7 +150,7 @@ img {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 3% 5%;
+    padding: 2% 3%;
 }
 
 .planta,
@@ -176,16 +176,17 @@ img {
 
 .up {
     width: 100%;
-    background-color: bisque;
+    
     display: flex;
     align-items: flex-start;
     flex-direction: row;
     justify-content: space-between;
+    padding: 1% 0;
 }
 
 .posicionamento_2 {
     width: 100%;
-    background-color: bisque;
+    height: 100%;
     display: flex;
     align-items: flex-start;
     flex-direction: row;
@@ -212,9 +213,9 @@ input[type="checkbox"]{
 nav{
     background-color: rgba(255, 255, 255, .5);
     border-radius: 10px;
-    width: 17.2%;
+    width: 16.1%;
     height: 27%;
-    top: -45%;
+    top: -61%;
     position: absolute;
     
     transition: all .5s;
@@ -261,17 +262,29 @@ label{
     justify-content: space-around;
     width: 100%;
     height: 100%;
+    padding: 1% 0;
 
 }
 
-.options {
-    background-color: #006780;
+.posicionamento_opcao {
+    
     
     width: 100%;
     height: 25%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.options {
+    
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5% 0;
 
  }
 
@@ -297,12 +310,15 @@ label{
     border: 1px solid #003D73;
 }
 
+.position {
+    padding: 2% 0;
+}
 .posicionamento_producao {
     
     display: flex;
     justify-content: space-between;
     width: 35%;
-    height: 25%;
+    height: 100%;
 }
 
 .producao,
@@ -328,7 +344,7 @@ label{
 }
 
 .posicionamento_informacoes {
-    background-color: aquamarine;
+    
     width: 100%;
     height: 65%;
     display: flex;
@@ -344,13 +360,13 @@ label{
 }
 
 .grafico {
-    background-color: aquamarine;
+    
     width: 60%;
 
 }
 
 .posicionamento_carros {
-    background-color: antiquewhite;
+    
     width: 30%;
     display: flex;
     flex-direction: column;
