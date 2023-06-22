@@ -32,6 +32,7 @@ font-family: var(--lato);
     background-color: var(--azul);
     padding: 3% 2%;
    color: var(--branco_fonte);
+   
 }
 
 .menu_alinhamento {
@@ -168,19 +169,103 @@ height: 20px;
 width: 20px;
 }
 
-@media screen and (max-width: 911px) {
-    .servicos > div > div:nth-child(2) {
-        margin-top: 100px;
-    }
+.pagina_mobile {
+    background-color: rgb(224, 245, 253);
+    width: 790px;
+    height: 100vh;
+    display: flex;
+justify-content: space-between;
 }
 
-@media screen and (max-width: 768px) {
-    .menu_barras {
+
+.primeira_coluna_mobile {
+background-color: chocolate;
+width: 15%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 10% 0;
+}
+
+.logo_integradash_mobile {
+width: 100%;    
+height: 10%;
+}
+
+.primeira_coluna_mobile .foto_perfil_mobile {
+width: 190%;
+border-radius: 10%;
+margin-left: -10px;
+}
+
+
+.primeira_coluna_mobile .menu_hamburguer {
+    width: 210%;
+    margin-left: -10px;
+}
+
+.primeira_coluna_mobile .botao_modo_noturno_img {
+    width: 150%;
+}
+
+.primeira_coluna_mobile .botao_home_mobile {
+    width: 150%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .imagem_vitor {
+        background-color: white;
+        width: 19%;
+        height: 8%;
+        border-radius: 10%;
         display: flex;
+        font-weight: 700;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 13px;
     }
 
-    #menu_links {
-        display: none;
+    .imagem_vitor .foto_perfil {
+        width: 20%;
+        height: 55%;
     }
 }
+ 
+@media screen and (max-width: 790px) {
+    .imagem_vitor {
+      display: none;
+    }
 
+
+
+
+
+
+}
+ 
