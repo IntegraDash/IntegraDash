@@ -172,12 +172,37 @@ input[type=range] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
+    margin: 40px 0;
 }
 
 .centro-p-linha span, ul, li {
     display: flex;
     color: var(--preto);
+}
+
+.centro-p-linha ul {
+    gap: 15px;
+}
+
+.centro-p-linha span {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.centro-p-linha ul li{
+    width: 80px;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--branco);
+    font-weight: 700;
+}
+
+.centro-p-linha ul li:nth-child(3) {
+    background-color: var(--azulC);
+    color: var(--branco);
 }
 
 .lupa .lupa-input-centro {
@@ -212,55 +237,139 @@ input[type=range] {
     width: 25px;
 }
 
-
 .inicio-lateral {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lupa-alert {
     display: flex;
     gap: 25px;
 }
 
-.centro-p-linha ul {
-    gap: 15px;
-}
-
-.centro-p-linha span {
-    font-weight: 700;
-    font-size: 22px;
-}
-
-.centro-p-linha ul li{
-    width: 80px;
-    height: 35px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--branco);
-    font-weight: 700;
-}
-
-.centro-p-linha ul li:nth-child(3) {
-    background-color: var(--azulC);
-    color: var(--branco);
-}
 
 .plus {
     display: flex;
-    gap: 5px;
+    gap: 8px;
+    align-items: center;
+}
+
+.plus img {
+    width: 20px;
+    height: 20px;
 }
 
 .usuario {
     display: flex;
     align-items: center;
-    color: var(--preto);
     background-color: var(--branco);
-    width: 200px;
+    width: 220px;
     height: 55px;
     justify-content: space-around;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.usuario span {
+    color: var(--preto);
+    font-weight: 600;
 }
 
 .foto-user {
     height: 40px;
-   
 }
+
+.plantas {
+    margin-bottom: 25px;
+}
+
+.planta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 350px; 
+    height: 130px; 
+
+    padding: 10px;
+    gap: 10px;
+    
+    background: white; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 10px;
+}
+
+.planta span {
+    color: var(--preto);
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.carro-azul {
+    width: 250px;
+}
+
+.planta img {
+    width: 150px; 
+    height: 80px; 
+}
+
+
+
+.imagens-planta {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.lado-um {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.graficos {
+    display: flex;
+    gap: 10px;
+}
+
+.grafico {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 130px; 
+    gap: 15px;
+    
+    background-color: white; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 10px;
+
+    
+}
+
+.grafico span {
+    color: var(--preto);
+    font-size: 10px;
+}
+
+.plus-add {
+    width: 50px;
+}
+
+.grafico-img {
+    width: 150px; 
+    height: 80px; 
+}
+
+.graficos div {
+    margin-bottom: 20px;
+}
+
+
+
 
 /* https://pt.stackoverflow.com/questions/265316/range-mudar-cor-da-barra-de-progresso-no-chrome */
