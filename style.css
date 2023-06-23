@@ -321,6 +321,35 @@ label{
     height: 100%;
 }
 
+.esquerdo {
+    
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+}
+
+.bola{
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.meio {
+    
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.direito {
+    
+    width: 33.3%;
+    height: 100%;
+}
+
 .producao,
 .custo {
     
@@ -328,19 +357,21 @@ label{
     width: 45%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 #linha-vertical {
     height: 70%;
     border-right: 1px solid red;
+    
 }
 
 #circulo {
     background: lightblue;
     border-radius: 50%;
-    width: 7%;
-    height: 70%;
+    width: 1vw;
+    height: 2vh;
+    
 }
 
 .posicionamento_informacoes {
@@ -354,7 +385,7 @@ label{
 }
 
 .posicionamento_grafico {
-    border: 1px solid yellowgreen;
+    
     width: 70%;
     height: 100%;
 }
@@ -370,11 +401,38 @@ label{
     width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
+
+.graf_img {
+    width: 100%;
+    height: 100%;
+}
+
+.graf_img img {
+    width: 100%;
+    height: 100%;
+}
+
 .demonstrativo {
-    border: 1px solid blueviolet;
+
+    border-radius: 10px;
+    background-color: #ffffff;
     width: 90%;
     height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dem_img {
+    width: 100%;
+    
+    
+}
+
+.demonstrativo img {
+    width: 90%;
+    border-radius: 10px;
 }
