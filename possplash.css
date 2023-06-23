@@ -5,57 +5,105 @@
 
 }
 
-body{
+body {
     display: flex;
+
 }
-.logopagina1{
-margin-top: 40px;
-padding: 30px;
-font-size: 15px;
+
+.logopagina1 {
+    margin-top: 40px;
+    padding: 30px;
+    font-size: 15px;
 }
-h1{
+
+h1 {
     margin-top: 5px;
     font-size: 40px;
     padding: 80px 150px 5px 150px;
-    font-size: 60px;
+    font-size: 57px;
     font-family: 'Lato', sans-serif;
 }
-h2{
+
+h2 {
     padding: 5px 150px 60px 150px;
-    font-size: 24px;
+    font-size: 21px;
     font-family: 'Lato', sans-serif;
     font-weight: lighter;
 
 
 }
-.logopagina1 img{
-  height: 20px;
+
+.logopagina1 img {
+    height: 20px;
 }
 
-.esquerda a{
-   background-color:#0B7ABF;
-   padding: 10px;
-   color: white;
-   text-decoration: none;
-   
-   
+.esquerda {
+    height: 100vh;
 }
-.direito{ 
+
+.esquerda a {
+    background-color: #0B7ABF;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    width: 80%;
+
+
+
+}
+
+.direito {
     background-color: #003d73;
     display: flex;
     flex-direction: column;
     color: white;
-  
+    flex-direction: column;
+    align-items: center;
+
 
 }
+
 .logoclaro img {
-    width: 40%; 
-}  
-          
-.logoclaro{
-    display: flex;
+    margin-top: 10%;
+    width: 50%;
 }
-.centro a{  
-margin: 147px;
+
+.logoclaro {
+    display: flex;
+    justify-content: center;
 
 }
+
+.centro a {
+    margin-left: 147px;
+
+}
+.h3{
+    margin-top: 50px;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+   
+
+}
+
+.direito h3 {
+        margin-top: 60px;
+        font-size: 24px;
+      
+
+}
+.h3p{
+    width: 90%;
+    display: flex;   
+   padding: 50px;
+   flex-direction: column;
+   justify-content: flex-start;
+   
+
+}
+.h3p p{
+        margin-top: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+  
