@@ -11,7 +11,7 @@ body {
 }
 
 article {
-    width: 5%;
+    width: 15%;
     height: 100vh;
     background-color: #003D73;
     display: flex;
@@ -49,11 +49,56 @@ article:hover {
 
 .menu_fechado {
     display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%
+
+}
+
+.posicionamento_article {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    padding: 5% 0;
+    align-items: center;
+    width: 50%;
+}
+
+.posicionamento_article2 {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 18%;
+    padding: 10% 0 0 0;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.posicionamento_fav {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20% 0 5% 20%;
+    justify-content: space-around;
+    height: 50%;
+    
+}
 
+.posicionamento_heart {
+    display: flex;
+    align-items: center;
+    background-color: #053155;
+    height: 50%;
+    font-size: 80%;
+}
+
+.posicionamento_heart p {
+    padding-left: 4%;
+}
+
+.posicionamento_heart img {
+    width: 15%;
+    
 }
 
 .linha-horizontal {
