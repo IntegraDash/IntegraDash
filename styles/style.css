@@ -205,6 +205,11 @@ input[type=range] {
     color: var(--branco);
 }
 
+.centro-lados {
+    display: flex;
+    justify-content: space-between;
+}
+
 .lupa .lupa-input-centro {
     background-color: var(--branco);
     border-radius: 10px;
@@ -348,7 +353,6 @@ input[type=range] {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
     border-radius: 10px;
 
-    
 }
 
 .grafico span {
@@ -368,6 +372,76 @@ input[type=range] {
 .graficos div {
     margin-bottom: 20px;
 }
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.info {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    width: 250px;
+    height: 130px;
+    padding: 10px;
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.info span {
+    font-weight: 600;
+    width: 125px;
+}
+
+.info span, p {
+    color: var(--preto);
+}
+
+.info p {
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.onibus {
+    margin-left: 10px;
+}
+
+.info div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.info img {
+    width: 70px;
+}
+
+.icone-alerta img{
+    width: 40px;
+}
+
+.icone-porcent img {
+    height: 30px;
+}
+
+.infos-cards {
+    display: flex;
+    gap: 15px;
+}
+
+.grafico-central {
+    /* width: 435px; */
+    width: 515px;
+    height: 425px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
 
 
 
