@@ -96,6 +96,7 @@ aside {
     height: 36px;
     background-color: var(--azulE);
     border: none;
+    padding-left: 40px;
 }
 
 .btn-menu {
@@ -107,6 +108,11 @@ aside {
     height: 36px;
     background-color: var(--azulC);
     border: none;
+}
+
+.btn-menu:hover {
+    background-color: rgba(245, 222, 179, 0.266);
+    cursor: pointer;
 }
 
 .i-home {
@@ -164,7 +170,7 @@ input[type=range] {
 .principal-home {
     overflow-y: scroll;
     width: 80%;
-    padding: 60px;
+    padding: 60px 100px;
 }
 
 
@@ -215,7 +221,6 @@ input[type=range] {
     border-radius: 10px;
     color: var(--preto);
     height: 40px;
-    padding-left: 40px;
 }
 
 
@@ -442,8 +447,88 @@ input[type=range] {
     border-radius: 10px;
 }
 
+.menu-hamb {
+    display: none;
+}
 
 
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 479px) {
+    .principal-home, .lupa {
+        display: none;
+    }
+
+    main {
+        flex-direction: row-reverse;
+    }
+
+    aside {
+        align-items: center;
+        border-radius: 20px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .btn-menu{
+       width: 40px;
+       display: flex;
+       justify-content: center;
+    }
+
+    .btn-texto {
+        display: none;
+    }
+
+    .i-analises, .i-cavalo, .i-coracao, .i-alertas {
+        margin-left: 0;
+    }
+
+
+    .s2 label {
+        display: none;
+    }
+
+    .p-menu.s.s2 {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    /* colocar cada um na ordem com classes */
+
+    .ordem {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ord {
+        order: 1;
+    }
+
+    .ord2{
+        order: 2;
+    }
+
+    .ord3 {
+        order: 3;
+    }
+
+    .p-menu {
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .menu-hamb {
+        display: flex;
+        width: 50px;
+    }
+
+    a .logo {
+        display: none;
+    }
+
+}
 
 
 /* https://pt.stackoverflow.com/questions/265316/range-mudar-cor-da-barra-de-progresso-no-chrome */
