@@ -73,8 +73,8 @@ margin-top: 10px;
 }
 
 .logo_integradash {
-    width: 70%;
-    margin: 20% 20%;
+    width: 35px;
+    margin: 30% 22%;
 }
 
 .rodape_menu_pequeno img {
@@ -160,6 +160,13 @@ might: 600px;
     max-width: 50%;
 }
 
+.hover_ligadp:hover {
+    background-color: rgb(218, 117, 55)
+
+}
+
+/* COMO DEIXAR LIGADOOOOO */
+
 a:hover {
     background-color: rgb(55, 139, 218)
 }
@@ -167,6 +174,18 @@ a:hover {
 a {
 height: 20px;
 width: 20px;
+}
+
+select {
+    width: 98%;
+}
+
+option {
+    font-weight: 100;
+}
+
+.pagina_mobile_responsividade {
+    display: none;
 }
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -296,7 +315,6 @@ margin-left: -16px;
 
 
 
-
 @media screen and (max-width: 1100px) {
     .imagem_vitor {
         background-color: white;
@@ -314,6 +332,14 @@ margin-left: -16px;
         width: 20%;
         height: 55%;
     }
+
+    .logo_integradash {
+        width: 78%;
+    }
+
+    /* .SBC {
+        display: none;
+    } */
 }
  
 @media screen and (max-width: 790px) {
@@ -321,12 +347,17 @@ margin-left: -16px;
       display: none;
     }
 
+    /*  FICA MALUUUCO!!
+    
+        a:hover {
+        display: none;
+    } */
+
     @media screen and (max-width: 790px) {
-        .pagina_mobile {
+        .pagina_mobile_responsividade {
           display: flex;
         }
   
-
-
 }
  
+}
