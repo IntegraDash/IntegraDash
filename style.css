@@ -15,6 +15,7 @@ article {
     height: 100vh;
     background-color: #003D73;
     display: flex;
+    flex-direction: row;
 
 
 }
@@ -27,8 +28,22 @@ article:hover {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        align-items: flex-start;
-        
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .menu_aberto img {
+        width: 20%;
+    }
+
+    .posicionamento_aberto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 85%;
+        height: 100%;
     }
 
     .menu_fechado {
@@ -38,7 +53,18 @@ article:hover {
 }
 
 .logo {
-    margin-bottom: 30%;
+    height: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 60%;
+}
+
+.logo_aberto {
+    width: 25%;
 }
 
 
@@ -52,30 +78,51 @@ article:hover {
     justify-content: space-around;
     flex-direction: row;
     width: 100%;
-    height: 100vh;
-    
+    height: 100%;
+
 
 }
 
+.posicionamento_fechado {
+
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
 .posicionamento_article {
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
-    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
     width: 50%;
     height: 100vh;
 }
 
+.article_2 {
+
+    display: flex;
+    height: 75%;
+    width: 100%;
+    flex-direction: column;
+}
+
 .posicionamento_article2 {
+
     color: #ffffff;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 18%;
-    
+    height: 40%;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.position_analises {
+    padding: 12% 0;
 }
 
 .posicionamento_fav {
@@ -83,16 +130,33 @@ article:hover {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    height: 50%;
-    
+    height: 60%;
+    width: 100%;
+
+}
+
+.heart {
+    display: flex;
+    height: 40%;
+    flex-direction: column;
 }
 
 .posicionamento_heart {
     display: flex;
     align-items: center;
-    background-color: #053155;
     height: 50%;
     font-size: 80%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.posicionamento_img {
+    background-color: #053155;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 80%;
 }
 
 .posicionamento_heart p {
@@ -101,7 +165,7 @@ article:hover {
 
 .posicionamento_heart img {
     width: 15%;
-    
+
 }
 
 .linha-horizontal {
@@ -112,8 +176,7 @@ article:hover {
 #divBusca {
     background-color: #053155;
     border: none;
-
-    width: 80%;
+    width: 100%;
     margin: 10% 0 10% 0;
 }
 
@@ -136,16 +199,46 @@ article:hover {
 }
 
 .conteudo {
+
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    height: 80%;
+    justify-content: flex-start;
+}
+
+.conteudo_aberto {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .navegacao {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    height: 90%;
+    justify-content: space-evenly;
 
+}
+
+.navegacao_aberto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    justify-content: space-evenly;
+
+}
+
+.posicionamento_navegacao {
+    display: flex;
+    /* background-color: black; */
+    height: 70%;
+    flex-direction: column;
+    align-items: center;
 }
 
 .navegacao a,
@@ -154,16 +247,37 @@ article:hover {
     align-items: center;
     text-align: center;
     color: white;
-    font-size: ;
     text-decoration: none;
     padding: 10% 0 10% 0;
+    justify-content: center;
+}
 
+.navegacao_aberto a,
+.config_aberto a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 10% 0 10% 0;
+    justify-content: flex-start;
 }
 
 .config {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    height: 20%;
+    justify-content: space-evenly;
+}
+
+.config_aberto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .posicionamento {
@@ -172,7 +286,7 @@ article:hover {
 
 
 img {
-    width: 30px;
+    width: 40%;
 
 }
 
@@ -191,7 +305,7 @@ img {
     width: 30%;
 }
 
-.posicionamento_conteudo{
+.posicionamento_conteudo {
     width: 100%;
     height: auto;
     display: flex;
@@ -203,28 +317,28 @@ img {
 
 .planta,
 .perfil {
-    
+
     border-radius: 10px;
     background-color: #ffffff;
     display: flex;
     align-items: center;
     width: 18%;
     height: 90%;
-    
+
 }
 
 .planta img {
     width: 70%;
 }
 
- 
-.perfil img{
+
+.perfil img {
     width: 70%;
 }
 
 .up {
     width: 100%;
-    
+
     display: flex;
     align-items: flex-start;
     flex-direction: row;
@@ -241,64 +355,64 @@ img {
     justify-content: space-between;
 }
 
-a{
+a {
     text-decoration: none;
-    
- }
 
-ul{
+}
+
+ul {
     list-style: none;
 }
 
-.select img{
+.select img {
     width: 20px;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
     display: none;
 }
 
-nav{
+nav {
     background-color: rgba(255, 255, 255, .5);
     border-radius: 10px;
     width: 16.1%;
     height: 27%;
     top: -61%;
     position: absolute;
-    
+
     transition: all .5s;
 }
 
 
-input[type="checkbox"]:checked ~ nav{
-        transform: translateY(420px);
+input[type="checkbox"]:checked~nav {
+    transform: translateY(420px);
 }
 
-ul{
+ul {
     top: 70px;
     position: absolute;
     width: 100%;
 }
 
-a{
-    
+a {
+
     display: block;
-    
     color: #003D73;
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
 
-a:hover{
+a:hover {
     background-color: #003D73;
     color: white;
 }
 
-label{
+label {
     padding: 5px;
     position: relative;
-    z-index: 1;  
+    z-index: 1;
 }
 
 .tamanho_img img {
@@ -315,8 +429,8 @@ label{
 }
 
 .posicionamento_opcao {
-    
-    
+
+
     width: 100%;
     height: 25%;
     display: flex;
@@ -325,8 +439,8 @@ label{
 }
 
 .options {
-    
-    
+
+
     width: 100%;
     height: 100%;
     display: flex;
@@ -334,25 +448,26 @@ label{
     align-items: flex-start;
     padding: 0.5% 0;
 
- }
+}
 
- .posicionamento_1 {
+.posicionamento_1 {
     width: 100%;
     height: 25%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
- }
+}
 
- .posicionamento_options{
+.posicionamento_options {
     display: flex;
-    
- }
- .posicionamento_options a{
-    padding-right: 25%;
- }
 
- .linha-horizontal1 {
+}
+
+.posicionamento_options a {
+    padding-right: 25%;
+}
+
+.linha-horizontal1 {
     width: 100%;
     height: 1%;
     border: 1px solid #003D73;
@@ -361,8 +476,9 @@ label{
 .position {
     padding: 2% 0;
 }
+
 .posicionamento_producao {
-    
+
     display: flex;
     justify-content: space-between;
     width: 35%;
@@ -370,13 +486,13 @@ label{
 }
 
 .esquerdo {
-    
+
     width: 33.3%;
     height: 100%;
     display: flex;
 }
 
-.bola{
+.bola {
     width: 33.3%;
     height: 100%;
     display: flex;
@@ -384,7 +500,7 @@ label{
 }
 
 .meio {
-    
+
     width: 33.3%;
     height: 100%;
     display: flex;
@@ -393,14 +509,14 @@ label{
 }
 
 .direito {
-    
+
     width: 33.3%;
     height: 100%;
 }
 
 .producao,
 .custo {
-    
+
     border: 1px double;
     width: 45%;
     height: 100%;
@@ -408,10 +524,11 @@ label{
     justify-content: flex-start;
     align-items: center;
 }
+
 #linha-vertical {
     height: 70%;
     border-right: 1px solid red;
-    
+
 }
 
 #circulo {
@@ -419,33 +536,33 @@ label{
     border-radius: 50%;
     width: 1vw;
     height: 2vh;
-    
+
 }
 
 .posicionamento_informacoes {
-    
+
     width: 100%;
     height: 65%;
     display: flex;
     justify-content: space-around;
-   
+
 
 }
 
 .posicionamento_grafico {
-    
+
     width: 70%;
     height: 100%;
 }
 
 .grafico {
-    
+
     width: 60%;
 
 }
 
 .posicionamento_carros {
-    
+
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -476,8 +593,8 @@ label{
 
 .dem_img {
     width: 100%;
-    
-    
+
+
 }
 
 .demonstrativo img {
