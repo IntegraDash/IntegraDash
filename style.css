@@ -1,115 +1,151 @@
 :root {
-  --fonte-principal: 'Lato', sans-serif;
-  --azul: #003D73;
+  --fonte-principal: 'Lato', sans-serif; /* Define uma variável para a fonte principal */
+  --azul: #003D73; /* Define uma variável para a cor azul */
 }
 
 body {
-  font-family: var(--fonte-principal);
+  font-family: var(--fonte-principal); /* Aplica a fonte principal ao corpo do documento */
   margin: 0;
   padding: 0;
-  background-color: #EEF3FA;
+  background-color: #EEF3FA; /* Define a cor de fundo */
 }
 
 .menu-master {
-  display: flex;
+  display: flex; /* Exibe os elementos filhos em linha */
 }
 
 .menu {
-  width: 200px;
-  height: 95vh;
-  background-color: var(--azul);
-  color: white;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 200px; /* Define a largura do menu principal */
+  height: 95vh; /* Define a altura do menu principal */
+  background-color: var(--azul); /* Define a cor de fundo do menu principal */
+  color: white; /* Define a cor do texto do menu principal */
+  padding: 20px; /* Define o espaçamento interno do menu principal */
+  display: flex; /* Exibe os elementos filhos em linha */
+  flex-direction: column; /* Define a direção da disposição dos elementos filhos como coluna */
+  justify-content: space-between; /* Alinha os elementos filhos verticalmente */
+  align-items: flex-start; /* Alinha os elementos filhos à esquerda */
 }
 
 .logo_cima img {
-  width: 48px;
-  height: 48px;
+  width: 48px; /* Define a largura da imagem do logotipo */
+  height: 48px; /* Define a altura da imagem do logotipo */
 }
 
 nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 20px 0;
+  list-style-type: none; /* Remove o estilo de marcadores da lista */
+  padding: 0; /* Remove o espaçamento interno da lista */
+  margin: 0; /* Remove as margens da lista */
 }
 
 nav ul li {
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Define o espaçamento inferior entre os itens da lista */
 }
 
 nav ul li a {
-  vertical-align: 0.875em;
-  color: white;
-  text-decoration: none;
+  vertical-align: 0.875em; /* Alinha verticalmente o texto dentro dos itens do menu */
+  color: white; /* Define a cor do texto dos itens do menu */
+  text-decoration: none; /* Remove a decoração de texto dos itens do menu */
 }
 
 .corpo {
-  flex: 1;
-  padding: 55px;
+  flex: 1; /* Permite que a div se expanda e ocupe o espaço restante */
+  padding: 55px; /* Define o espaçamento interno do conteúdo principal */
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.buscador {
-  display: flex;
-  align-items: center;
+  display: flex; /* Exibe os elementos filhos em linha */
+  justify-content: space-between; /* Alinha os elementos filhos horizontalmente */
+  align-items: center; /* Alinha os elementos filhos verticalmente */
 }
 
 .buscador input[type="text"] {
-  width: 300px;
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  width: 300px; /* Define a largura do campo de texto de busca */
+  padding: 5px; /* Define o espaçamento interno do campo de texto de busca */
+  border-radius: 5px; /* Define o raio das bordas do campo de texto de busca */
+  border: 1px solid #ccc; /* Define a cor e espessura da borda do campo de texto de busca */
 }
 
 .add-btn {
-  margin-left: 10px;
-  padding: 5px 10px;
-  background-color: #003D73;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  margin-left: 10px; /* Define a margem esquerda do botão "Adicionar" */
+  padding: 5px 10px; /* Define o espaçamento interno do botão "Adicionar" */
+  background-color: #003D73; /* Define a cor de fundo do botão "Adicionar" */
+  color: white; /* Define a cor do texto do botão "Adicionar" */
+  border: none; /* Remove a borda do botão "Adicionar" */
+  border-radius: 5px; /* Define o raio das bordas do botão "Adicionar" */
+  cursor: pointer; /* Altera o cursor para o estilo de ponteiro ao passar o mouse sobre o botão "Adicionar" */
 }
 
 .folders {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  padding: 20px;
+  display: grid; /* Exibe os elementos filhos em uma grade */
+  grid-template-columns: repeat(3, 1fr); /* Define o número e tamanho das colunas da grade */
+  grid-gap: 20px; /* Define o espaçamento entre os elementos da grade */
+  padding: 20px; /* Define o espaçamento interno dos elementos da grade */
 }
 
 .folder {
-  border: 1px solid #ccc;
-  padding: 10px;
-  display: flex;
-  align-items: center;
+  border: 1px solid #ccc; /* Define a cor e espessura da borda das pastas */
+  padding: 10px; /* Define o espaçamento interno das pastas */
+  display: flex; /* Exibe os elementos filhos em linha */
+  align-items: center; /* Alinha os elementos filhos verticalmente */
 }
 
 .folder img {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
+  width: 24px; /* Define a largura da imagem da pasta */
+  height: 24px; /* Define a altura da imagem da pasta */
+  margin-right: 10px; /* Define a margem direita da imagem da pasta */
 }
 
 .botao-links {
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Exibe os elementos filhos em linha */
+  flex-direction: column; /* Define a direção da disposição dos elementos filhos como coluna */
+  margin-top: auto; /* Alinha os elementos filhos no final do container */
 }
 
 .botao-links a {
-  color: white;
-  text-decoration: none;
-  margin-top: 10px;
+  color: white; /* Define a cor do texto dos links */
+  text-decoration: none; /* Remove a decoração de texto dos links */
+  margin-top: 10px; /* Define o espaçamento superior entre os links */
 }
 
 .menu .icon i {
-  font-size: 20px; /* Tamanho dos ícones */
+  font-size: 25px; /* Define o tamanho dos ícones */
+}
+
+@media screen and (max-width: 768px) {
+  .menu-master {
+    flex-direction: column; /* Altera a direção da disposição dos elementos filhos para coluna */
+  }
+
+  .menu {
+    width: 100%; /* Define a largura do menu principal como 100% */
+    height: auto; /* Define a altura do menu principal como automática */
+    padding: 10px; /* Define o espaçamento interno reduzido */
+  }
+
+  .menu .logo_cima {
+    display: none; /* Esconde o logotipo do menu no modo responsivo */
+  }
+
+  .menu .botao-links {
+    flex-direction: row; /* Altera a direção da disposição dos elementos filhos para linha */
+    justify-content: space-between; /* Alinha os elementos filhos horizontalmente */
+    align-items: center; /* Alinha os elementos filhos verticalmente */
+  }
+
+  .menu .botao-links a {
+    margin-top: 0; /* Remove o espaçamento superior entre os links */
+  }
+
+  .corpo {
+    padding: 35px; /* Define o espaçamento interno aumentado para o conteúdo principal no modo responsivo */
+  }
+
+  .buscador input[type="text"] {
+    width: 100%; /* Define a largura do campo de texto de busca como 100% */
+    max-width: 300px; /* Define a largura máxima do campo de texto de busca */
+  }
+
+  .folders {
+    grid-template-columns: repeat(2, 1fr); /* Altera o número e tamanho das colunas da grade no modo responsivo */
+  }
 }
