@@ -9,6 +9,8 @@
 body {
   display: flex;
   flex-direction: row;
+  font-family: 'Lato', sans-serif;
+
 }
 
 .logo {
@@ -17,7 +19,7 @@ body {
   width: max-content;
   
   margin-right: 10px;
-   margin-top: 20px;
+  margin-top: 20px;
 
 }
 
@@ -109,23 +111,26 @@ gap: 15px;
   width: 100%;
   top: 135px;
   background-color: #ffffff;
- 
+ padding: 30px;
  
 }
+  /*
 .texto {
   margin-left: 40px;
- 
+
 }
+*/
 .texto h2 {
   color: #000000;
   padding: 10px;
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
 .texto p {
   color: #000000;
   padding-left: 10px;
-  font-weight: bold
+  font-family: 'Lato', sans-serif;
+  padding: 10px;
 }
 
 .caixa{
@@ -134,24 +139,25 @@ gap: 15px;
   margin: 20px;
   border-radius: 10px;
   margin-top: -55px;
-  font-weight: bold
+  font-family: 'Lato', sans-serif;
+
+}
+.caixa img {
+  width: 200px;
+  height: 200px;
 }
 
 
-.foto img {
-    width: 200px;
-    height: 200px;
-  }
   
   #img_circular {
     border-radius: 200px
   }
   ul {list-style-type: none;}
-  body {font-family: Verdana, sans-serif;}
+ 
   
   /* Month header */
   .month {
-    padding: 70px 25px;
+    padding: 20px;
     width: 100%;
     background: #053155;
     text-align: center;
@@ -198,7 +204,7 @@ gap: 15px;
   
   /* Days (1-31) */
   .days {
-    padding: 10px 0;
+    padding: 20px;
     background: #eee;
     margin: 0;
   }
@@ -219,3 +225,43 @@ gap: 15px;
     background: #1abc9c;
     color: white !important
   }
+
+  @media screen and (max-width: 796px) {
+    body {
+      width: 100%;
+      background-size:  100% 70%;  
+      flex-direction: row-reverse;
+  }
+  .esquerdo {
+    width: 10%;
+    border-radius: 10px;
+    height: 90vh;
+
+  }
+  .menulogo h2  {
+display: none; 
+
+ }
+ .coracaocinho {
+  display: none;
+ }
+ .menulogo p {
+  display: none;
+ }
+.menufinal {
+  margin-top: 220px;
+}
+.logomobile {
+ margin-top: 20px;
+ width: 30px;
+ height: 20px;
+}
+.logo {
+  display: none;
+
+}
+ .calendario {
+  width: 300px;
+  margin: 20px;
+ }
+    }
