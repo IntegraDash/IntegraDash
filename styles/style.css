@@ -42,6 +42,10 @@ aside {
     box-shadow: 10px 0px 10px rgb(0 61 115 / 40%);
 }
 
+.inicio-resp {
+    display: none;
+}
+
 .logo {
     width: 50px;
 }
@@ -97,6 +101,10 @@ aside {
     background-color: var(--azulE);
     border: none;
     padding-left: 40px;
+}
+
+.img-user-resp {
+    display: none;
 }
 
 .btn-menu {
@@ -402,7 +410,7 @@ input[type=range] {
     width: 125px;
 }
 
-.info span, p {
+.info span, p, h1{
     color: var(--preto);
 }
 
@@ -456,8 +464,16 @@ input[type=range] {
 /* RESPONSIVIDADE */
 
 @media screen and (max-width: 479px) {
+    body {
+        background-color: var(--branco);
+    }
+
     .principal-home, .lupa {
         display: none;
+    }
+
+    .principal-home:nth-child(2):nth-child(2) {
+        display: flex;
     }
 
     main {
@@ -469,6 +485,83 @@ input[type=range] {
         border-radius: 20px;
         padding-left: 0;
         padding-right: 0;
+        width: 30%;
+    }
+
+    .inicio-resp {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0 40px 40px;
+    }
+
+    .logo-mobile {
+        width: 50px;
+    }
+
+    .boas-vindas {
+        display: flex;
+        align-items: center;
+        margin: 40px 15px 40px 0;
+    }
+
+    .boas-vindas img {
+        width: 45%;
+    }
+
+    .bv {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        gap: 10px;
+    }
+
+    .bv p {
+        font-weight: 600;
+    }
+
+    h1 {
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 25px;
+        font-weight: 900;
+        width: 150px;
+    }
+
+    .unidades {
+        display: flex;
+        justify-content: center;
+
+        width: 180px;
+        height: 45px;
+        border-radius: 6px;
+
+        background-color: var(--azulBranco);
+        color: var(--preto);
+    }
+
+    span {
+        color: var(--preto);
+        font-weight: 900;
+        font-size: 12px;
+    }
+
+    .taubate {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .carro {
+        width: 40px;
+    }
+
+    .centro-p-linha {
+        display: flex;
+    }
+
+    .img-user-resp {
+        display: flex;
+        height: 30px;
+        margin-bottom: 10px;
     }
 
     .btn-menu{
