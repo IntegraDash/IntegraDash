@@ -279,7 +279,7 @@ article:hover {
     text-align: center;
     color: white;
     text-decoration: none;
-    
+
     justify-content: flex-start;
 }
 
@@ -323,7 +323,7 @@ img {
 }
 
 .modo_tela img {
-    width: 30%;
+    width: 18%;
 }
 
 .posicionamento_conteudo {
@@ -619,4 +619,63 @@ label {
 .demonstrativo img {
     width: 90%;
     border-radius: 10px;
+}
+
+.responsividade {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .posicionamento_conteudo,
+    article {
+        display: none;
+    }
+
+    .responsividade {
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .respon_esquerdo {
+        background-color: aquamarine;
+        width: 85%;
+    }
+
+    .logo_respon {
+        height: 10%;
+    }
+
+    .logo_respon img {
+        height: 100%;
+    }
+
+    .posicionamentoproducao_respon {
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+    }
+
+
+    .respon_direito {
+        background-color: #003D73;
+        width: 15%;
+        height: 50%;
+    }
+
+    .producao_respon,
+    .custo_respon {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+        height: 40%;
+        width: 60%;
+        justify-content: space-around;
+    }
+
+
 }
