@@ -1,363 +1,502 @@
-* {padding: 0;
+* {
+    padding: 0;
     margin: 0;
-box-sizing: border-box;
-font-family: var(--lato);
+    box-sizing: border-box;
+    font-family: var(--font_lato);
 }
 
 :root {
---lato: 'Lato', sans-serif;
---azul: #003D73;
---azul_teste: #014683;
---branco_fundo: #ECF1F8;
---branco_fonte: #fff;
---azul_fundo: #053155;
+    
+    --azul_padrao: #003D73;
+    --fundo_pagina: #ECF1F8;
+    --branco: #fff;
+    --font_lato: 'Lato', sans-serif;
+    --azul_fundo: #053155; 
 }
 
-.menu_total {
+.primeira_secao_menu_esquerdo {
     display: flex;
 }
 
-.menu_pequeno {
-    width: 4%;
+.menu_esquerdo_pequeno {
+    width: 70px;
     height: 100vh;
-    background-color: var(--azul);
-    display: flex;
-    flex-direction: column ;
-    justify-content: space-between;
-}
+    background-color: var(--azul_padrao);
+}    
 
-.complemento_menu_pequeno {
-    width: 16%;
+.menu_esquerdo_grande {
+    width: 300px;
     height: 100vh;
-    background-color: var(--azul);
-    padding: 3% 2%;
-   color: var(--branco_fonte);
-   
+    background-color: var(--azul_padrao);
+}    
+
+.corpo_do_site_meio {
+    width: 55vw;
+    height: 100vh;
+    background-color:var(--fundo_pagina)
+}   
+
+.logo_integradash_desktop {
+    width: 40px;
+    margin: 30px 10px 0 20px;
+
 }
 
-.menu_alinhamento {
-    display: flex;
-    flex-direction: column;    
-    gap: 15px;
-    align-items: center;
-    margin-bottom: 240px;
+.espaco_menu_pequeno1 {
+    background-color: var(--azul_padrao);
+    height: 9vh;
+    width: 50px;
 }
 
-.menu_alinhamento img {
-    width: 80%;
+.espaco_menu_pequeno2 {
+    background-color: var(--azul_padrao);
+    height: 36vh;
+    width: 50px;
 }
 
-.rodape_menu_pequeno {
+.menu_parte_superior  {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-bottom: 60px;
+    gap: 20px;
+    align-items: center;
+    margin-left: 10PX;
 }
 
-.corpo_da_pagina {
-    width: 80%;
-    height: 100vh;
-    background-color: var(--branco_fundo);
-    padding: 3% 4%;
+.menu_parte_superior img {
+    width: 70%;
 }
 
-.itens_salvos {
-padding: 15px 0;
-font-weight: normal;
-margin-top: 10px;
-}
-
-.favoritos_complemento_menu_pequeno{
-    padding: 25px 0 10px 0;
-    font-weight: 400;
-}
-
-.logo_integradash {
-    width: 35px;
-    margin: 30% 22%;
-}
-
-.rodape_menu_pequeno img {
-    width: 80%;
-}
-
-.rodape_menu_pequeno {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-
-h2 {
-    font-size: 20px;
-    font-weight: 900;
-}
-
-h3 {
-    font-size: 18px;
-}
-.plantas {
-    background-color: var(--azul_fundo);
-    border: none;
-    color: var(--branco_fonte);
-    font-weight: lighter;
-    font-size: 15px;
-}
-
-.corpo_da_pagina .botao_add {
-    width: 40%;
-    margin-top: 10%;
-}
-
-.menu_alinhamento .icone_home {
-width: 110% ;
-might: 600px;
-
-}
-
-.menu_alinhamento .icone_alerta {
-    width: 80% ;
-    }
-
-.imagem_vitor {
-    background-color: white;
-    width: 18%;
-    height: 10%;
-    border-radius: 10%;
+.menu_parte_inferior {
+    
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-left: 10PX;
+}
+
+.menu_parte_inferior img {
+    width: 70%;}
+
+.menu_parte_inferior .botao_sair {
+    margin-left: 7px;
+}
+
+.hover1:hover {
+    background-color: rgb(55, 139, 218);
+
+    /* width: 30px;
+    height: 30px; */
+}
+
+.edicao_favoritos_esq_gde {
     font-weight: 700;
+    color: var(--branco);
+    margin-top: 81px;
+    margin-left: 25px;
+    font-size: 25PX;
+}
+
+.edicao_escolha {
+    color: var(--branco);
+    margin-top: 25px;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+select {
+    margin-left: 25PX;
+    margin-top: 15px;
+    background-color: var(--azul_fundo);
+    color: var(--branco);
+    font-weight: 300;
+    font-size: 15px;
+    width: 65%;
+}
+
+option {
+    color: var(--branco); 
+    font-weight: 300;  
+}
+
+.edicao_fav_meio_pag {
+font-weight: 700;
+margin-top: 81px;
+margin-left: 25px;
+font-size: 25PX;
+}
+
+.edicao_itens_salvos_meio_pag {
+
+margin-top: 25px;
+margin-left: 25px;
+font-size: 20px;
+}
+
+.botao_add_desktop {
+    width: 102px;
+    margin-left: 25px;
+    margin-top: 30px;
+
+}
+
+.corpo_pag_usuario {
+    width: 22vw;
+    background-color: var(--fundo_pagina);
+   }
+
+.caixa_perfil_usuario {
+    background-color: #fff;
+    width: 60%;
+    height: 8%;
+    margin-top: 81px;
+    margin-left: 40px;
+    border-radius: 11px;
+    display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.corpo_da_pagina {
-    display: flex;
-    justify-content: space-between;
+.edicao_foto_usuario {
+    width: 40px;
+    border-radius: 7px;
 }
 
-.corpo_da_pagina img {
-    width: 80%;
-}
-
-.foto_perfil {
-    border-radius: 10%;
-    
-}
-
-.imagem_vitor .foto_perfil {
-    width: 20%;
-    height: 65%;
-}
-
-
-.imagem_vitor .seta {
-    height: 10%;
+.seta_caixa_perfil {
     width: 6%;
-    position: relative;
-    right: 7%;
+    height: 13%;
+    margin-right: 7px;
+    margin-bottom: 15px;
 }
 
-.imagem_vitor p {
-    max-width: 50%;
+.tamanho_nome_perfil{
+width: 80px;
+font-weight: 700;
+font-size: 15px;
 }
-
-.hover_ligadp:hover {
-    background-color: rgb(218, 117, 55)
-
-}
-
-/* COMO DEIXAR LIGADOOOOO */
-
-a:hover {
-    background-color: rgb(55, 139, 218)
-}
-
-a {
-height: 20px;
-width: 20px;
-}
-
-select {
-    width: 98%;
-}
-
-option {
-    font-weight: 100;
-}
-
-.pagina_mobile_responsividade {
-    display: none;
-}
-
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 .pagina_mobile {
-    background-color: var(--branco_fundo);
-    width: 100vw;
+    display: none;
+
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                       M O B I L E
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+.pagina_mobile {
+    background-color: var(--fundo_pagina);
+}
+
+.terceira_secao_menu_mobile {
+    background-color: var(--fundo_pagina);
+
+}
+
+.logo_mobile{
+    width: 40px;
+    margin: 30px 10px 0px 20px;
+}
+
+.pagina_mobile_fav{
+    display: flex;
+}
+
+.primeira_secao_logo_mobile {
+    background-color: var(--fundo_pagina);
+    height: 100vh;
+    width: 100px;
+}
+
+.menu_direito_mobile{
+    background-color: var(--azul_padrao);
+    width: 110px;
+    height: 85vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+ }
+
+.segunda_secao_texto_mobile_e_caixa {
+    background-color: var(--fundo_pagina);
+    width: 100vh;
     height: 100vh;
     display: flex;
-justify-content: space-between;
+    flex-direction: column;
+    justify-content:space-around ;
 }
 
-
-.primeira_coluna_mobile {
-background-color: var(--azul);
-width: 15%;
-height: 80vh;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-padding: 10% 0;
-border-radius: 2vh;
-
+.texto_favoritos_mobile {
+    font-size: 30px;
+    margin-top: 150px;
 }
 
-.logo_integradash_mobile {
-width: 10%;    
-margin: 9% 0 0 -10%;
-
-
-}
-
-.primeira_coluna_mobile .foto_perfil_mobile {
-width: 190%;
-border-radius: 10%;
-margin-left: -16px;
-}
-
-
-.primeira_coluna_mobile .menu_hamburguer {
-    width: 210%;
-    margin: -20px 0 39px -10px;
-  
-
-}
-
-.primeira_coluna_mobile .botao_modo_noturno_img {
-    width: 150%;
-    margin-left: -12px;
-    margin-top: 210%;
-}
-
-.primeira_coluna_mobile .botao_home_mobile {
-    width: 180%;
-    margin-left: -13px;
+.Salve_favoritos_mobile {
+    margin-top: 30px;
 }
 
 .botao_add_mobile {
-    width: 20%;
+    width: 80px;
+    margin-top: 60px;
+    margin-bottom: 50px;
 }
 
-.botao_sair_mobile_img {
-    width: 110%;
-    margin-left: -6px;
-     
+.formatacao_textos_mobile {
+    font-size: 20px;
 }
 
-.lado_esquerdo_celular {
+.clique_no_botao_mobile {
+    margin-bottom: 250px;
+    margin-top: 30px;
+}
+
+.menu_hamburguer{
+    margin-top: 25px;
+    width: 50px;
+}
+
+.edicao_foto_usuario2{
+    width: 40px;
+    border-radius: 7px;
+    margin-top: 25PX;
+}
+
+.edicao_configuracao_mobile {
+    margin-top: 45PX;
+}
+
+.botao_sair_mobile {
+    margin-left: 7PX;
+    margin-bottom: 30px;
+}
+
+.teste{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 30%;
-    margin-left: 10%;
-  }
-
-  .teste_alinhamento {
-    margin-left: -9px;
-
-  }
-
-  .teste_alinhamento_fav {
-
-    margin-left: -8px;
-  }
-
-
-  .botao_sair_mobile_img  {
-    margin-top: 130%;
-  }
-
-  .teste_alinhamento_config {
-    margin-top: 140%;
-    margin-left: -10px;
-  }
-
-.fonte_mobile_G {
-    font-size: 200%;
 }
 
-.edicao_salve_aqui {
-    margin-top: -30px;
-    font-weight: 400;
+.teste3 {
+    display: flex;
 }
 
+.teste2{
+    color: var(--fundo_pagina);
+}
 
-.edicao_fonte_clique {
+.icone_mob {
+    width: 25px;
+}
 
-    margin-top: -30px;
-    font-weight: 400;
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                R E S P O N S I V I D A D E  1
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
- }
+@media screen and (max-width: 1200px) {
+    .caixa_perfil_usuario {
+        background-color: white;
+        width: 150px;
+        height: 63px;
+        border-radius: 10px;
+        display: flex;
+        font-weight: 600;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 11px;
+        margin-right: 15px;
+    }
 
- .edicao_fonte_vc {
-    font-weight: 400;
- }
+    .edicao_foto_usuario {
+        width: 37px;
+        border-radius: 7px;
+        margin-left: 5px;
+    }
 
+    .tamanho_nome_perfil{
+        width: 80px;
+        font-weight: 700;
+        font-size: 14px;
+        margin-left: 3px;
+    }
 
+    .seta_caixa_perfil {
+        width: 6%;
+        height: 13%;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
 
-
-
-
-
-
+    .pagina_mobile {
+        display: none;
+    }
+}
+        
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+               R E S P O N S I V O   2
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 
 @media screen and (max-width: 1100px) {
-    .imagem_vitor {
+    .caixa_perfil_usuario {
         background-color: white;
-        width: 19%;
-        height: 8%;
-        border-radius: 10%;
+        width: 140px;
+        height: 63px;
+        border-radius: 10px;
         display: flex;
         font-weight: 700;
         align-items: center;
         justify-content: space-around;
         font-size: 13px;
+        margin-right: 40px;
     }
 
-    .imagem_vitor .foto_perfil {
-        width: 20%;
-        height: 55%;
+    .edicao_foto_usuario {
+        width: 34px;
+        border-radius: 7px;
+        margin-left: 5px;
     }
 
-    .logo_integradash {
-        width: 78%;
+    .tamanho_nome_perfil{
+        width: 80px;
+        font-weight: 700;
+        font-size: 14px;
+        margin-LEFT: 5PX ;        
     }
 
-    /* .SBC {
+    .seta_caixa_perfil {
+        width: 6%;
+        height: 13%;
+        margin-right: 11px;
+        margin-bottom: 9px;
+    }
+
+    .pagina_mobile {
         display: none;
-    } */
+    }
 }
- 
-@media screen and (max-width: 790px) {
-    .pagina_principal {
+
+     
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+               R E S P O N S I V O   3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+@media screen and (max-width: 990px) {
+
+    .pagina_mobile {
       display: none;
     }
 
-    /*  FICA MALUUUCO!!
+    select{
+        width: 162px;
+    }
+}
+     
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+               R E S P O N S I V O   4
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+@media screen and (max-width: 820px) {
+
+    .pagina_desktop {
+      display: none;
+    }
+
+    .pagina_mobile {
+      display: unset;
+    }
+}
+ 
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+               R E S P O N S I V O   5
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+@media screen and (max-width: 675px) {
+
+    .pagina_desktop {
+      display: none;
+    }
+
+    .pagina_mobile {
+      display: unset;
+    }
+
+    .clique_no_botao_mobile {
+        width: 300px; 
+        position: relative;
+        top: 16px;
+    }
+
+    .botao_add_mobile {
+        width: 80px;
+        position: relative;
+        top: 8px     
+    }
+
+    .segunda_secao_texto_mobile_e_caixa {
+        background-color: var(--fundo_pagina);
+        width: 100vh;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around ;
+        PADDING-top: 8PX;
+    }
+
+    .Salve_favoritos_mobile {
+       position: relative;
+       top: 4px;
+    }
+
+    .Vc_ainda_favoritos_mobile {
+        position: relative;
+        top: 12px;
+    }
+}
+ 
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+               R E S P O N S I V O   6
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+@media screen and (max-width: 550px) {
+
+    .pagina_desktop {
+      display: none;
+    }
+
+    .pagina_mobile {
+      display: unset;
+    }
+
+    .Vc_ainda_favoritos_mobile {
+        width: 200px;
+    }
+
+    .segunda_secao_texto_mobile_e_caixa {
+        background-color: var(--fundo_pagina);
+        width: 100vh;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around ;
+        PADDING-top: 32PX;
+    }
+}
+ 
+
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+               OBSERVAÇÕES GERAIS 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+- hover fica malucom qdo desliga
     
         a:hover {
         display: none;
-    } */
-
-    @media screen and (max-width: 790px) {
-        .pagina_mobile_responsividade {
-          display: flex;
-        }
-  
-}
- 
-}
+    }
+    
+*/
