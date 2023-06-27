@@ -38,6 +38,7 @@
 
 .logo_integradash_desktop {
     width: 40px;
+    height: 40px;
     margin: 30px 10px 0 20px;
 
 }
@@ -426,7 +427,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
     .clique_no_botao_mobile {
         width: 300px; 
         position: relative;
-        top: 16px;
+        top: 8px;
     }
 
     .botao_add_mobile {
@@ -447,12 +448,18 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
     .Salve_favoritos_mobile {
        position: relative;
-       top: 4px;
+       top: 8px;
     }
 
     .Vc_ainda_favoritos_mobile {
         position: relative;
-        top: 12px;
+        top: 8px;
+    }
+
+    .texto_favoritos_mobile {
+        position: relative ;
+        top: 8px;
+        
     }
 }
  
