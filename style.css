@@ -647,9 +647,16 @@ label {
         align-items: flex-start;
     }
 
+    .posicionamentoesquerda_respon {
+        display: flex;
+        justify-content: center;
+    }
+
     .respon_esquerdo {
-        
-        width: 85%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .logo_respon {
@@ -663,8 +670,17 @@ label {
 
     .posicionamentooptions_respon {
         display: flex;
-        width: 40%;
+        width: 100%;
         height: 10%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .posicionamentoopcao_respon {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
     }
 
     .posicionamentooptions_respon a {
@@ -678,18 +694,16 @@ label {
         height: 10%;
     }
 
-    .posicionamentoproducao_respon {
-        height: 20%;
-        display: flex;
-        justify-content: space-between;
-        width: 30%;
+    .position_respon h1 {
+        height: 100%;
     }
 
-
-    .respon_direito {
-        background-color: #003D73;
-        width: 15%;
-        height: 50%;
+    .posicionamentoproducao_respon {
+        height: 7%;
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        align-items: center;
     }
 
     .producao_respon,
@@ -697,9 +711,16 @@ label {
         display: flex;
         flex-direction: row;
         border: 1px solid black;
-        height: 26%;
-        width: 60%;
+        height: 100%;
+        width: 40%;
         justify-content: space-around;
+        align-items: center;
+    }
+
+    .meio_respon {
+        display: flex;
+        height: 100%;
+        align-items: center;
     }
 
     .posicionamentoinformacoes_respon {
@@ -763,6 +784,56 @@ label {
 
     .demimg_respon img {
         width: 40%;
+    }
+
+    .respon_direito {
+        background-color: #003D73;
+        width: 30%;
+        height: 55%;
+    }
+
+    .barra_respon {
+        height: 100%;
+    }
+
+    .menu_respon {
+        height: 15%;
+    }
+
+    .menu_respon img {
+        height: 100%;
+    }
+
+    .perfil_respon {
+        height: 25%;
+    }
+
+    .select_respon {
+        width: 20%;
+    }
+
+    .foto_respon {
+        height: 25%;
+    }
+
+    .foto_respon img {
+        height: 25%;
+    }
+
+    .planta_respon {
+        display: none;
+    }
+
+    .navegacao_respon {
+        width: 60%;
+    }
+
+    .navegacao_respon a {
+        width: 35%;
+    }
+
+    .navegacao_respon a img {
+        width: 35%;
     }
 
 
