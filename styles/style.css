@@ -555,7 +555,59 @@ input[type=range] {
     }
 
     .centro-p-linha {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .centro-p-linha ul li {
+        width: 60px;
+        height: 35px;
+
+        font-size: 12px;
+        color: var(--branco);
+
+        border-radius: 0%;
+        
+        background-color: var(--azulC);
+    }
+
+    .carrossel {
         display: flex;
+        /* width: 616px;
+        height: 478px;*/
+        flex-direction: column; 
+        /* justify-content: center;
+        align-items: center; */
+        gap: 48px;
+        /* flex-shrink: 0; */
+    }
+
+    .info {
+        width: 200px;
+        height: 200px;
+
+        background-color: var(--azulBranco);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 10px;
+        padding: 15px;
+
+        box-shadow: none;
+        
+    }
+
+    .info span {
+        font-size: 15px;
+    }
+
+    .info p {
+        font-size: 14px;
+        max-width: 150px;
     }
 
     .img-user-resp {
@@ -621,7 +673,48 @@ input[type=range] {
         display: none;
     }
 
+    /* SLIDER */
+
+
+    /* .slider{
+        overflow: hidden;
+    
+    }
+    .slider > .slider-content{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 30%;
+        transition: all 500ms ease;
+    
+    }
+    
+    .slider > .slider-content > .slider-item {
+        flex: 0 0 auto;
+        width: 30%;
+    }
+    
+    .slider > input:nth-child(1):checked ~ .slider-content{
+        transform: translateX(0%);
+    }
+    
+    .slider > input:nth-child(2):checked ~ .slider-content{
+        transform: translateX(-30%);
+    }
+    .slider > input:nth-child(3):checked ~ .slider-content{
+        transform: translateX(-60%);
+    }
+    
+    .slider > input:nth-child(4):checked ~ .slider-content{
+        transform: translateX(-90%);
+    } */
+
 }
 
 
 /* https://pt.stackoverflow.com/questions/265316/range-mudar-cor-da-barra-de-progresso-no-chrome */
+
+/* CARROSSEL
+
+https://wallacemaxters.com.br/blog/63/como-fazer-um-carrossel-com-css-puro
+
+*/
