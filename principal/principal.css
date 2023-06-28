@@ -9,11 +9,18 @@
  
 
 } */
-.paginaprincipal{
 
+.paginaprincipal {
+width: 100vw;
+height: 100vh;
 display: flex;
-margin-top: 290px;
-justify-content: space-around;
-font-size: 80px;
-height: 216px;
+align-items: center;
+justify-content: center;
+}
+
+.Logo_Integradash_fundo_claro{
+    width: 400px;
+
+
+
 }
