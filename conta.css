@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 
 }
 
@@ -33,14 +34,24 @@ body {
     align-items: flex-end;
     margin-top: 50px;
 
+}
 
+xxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxx
 
-
+..Texto_recuperacao {
+    font-weight: 900;
+    
+    xxxxxxxxxxxxxxxxxxxx
+    xxxxxxxxxxxxxxxxxx
+    xxxxxxxxxxxxxxxxxxxx
 }
 
 .imagen1 img {
     width: 39%;
-    height: 95%;
+    height: 80%;
     margin-top: 50px;
 }
 .imagen2{
@@ -71,6 +82,7 @@ button {
     background-color: #1B77C2;
     color: white;
     width: 210px;
+    border: none;
 
 }
 
@@ -81,9 +93,13 @@ button {
     justify-content: center;
     align-content: space-around;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 20px;
 
 }
+.Pronto{
+    margin-left: 10px;
+}
+
 
 .logo {
     display: flex;
@@ -116,16 +132,23 @@ button {
 }
 
 .recuperadcaodeconta1 button {
-    padding: 10px;
+    padding: 11px;
     text-align: center;
+    margin-top: 30px;
+    width: 236px
 }
 
 
 .rodape {
-
+    margin-bottom: 20px;
     justify-content: center;
-    display: flex;
+    display: flex;  
+    color: #938686;
 
+}
+.imagenrodape{
+ margin-left: 5px;
+ margin-bottom: px;
 }
 
 
@@ -147,7 +170,19 @@ button {
 
 
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 900px) {
+.testeresponsividade {
+    font-size: 12px;
+    }
+    
+.imagenrodape {
+    width: 70px;
+    margin-left: 1px;
+   
+}
+
+
+@media screen and (max-width: 700px) {
     .direito img {
         width: 100%;
         height: unset;
