@@ -496,6 +496,10 @@ label {
     padding: 2% 0;
 }
 
+.posicionamento_producao2 {
+    display: none;
+}
+
 .posicionamento_producao {
 
     display: flex;
@@ -509,6 +513,15 @@ label {
     width: 33.3%;
     height: 100%;
     display: flex;
+}
+
+.posicionamento_legenda {
+    width: 100%;
+}
+
+.posicionamento_legenda p {
+
+    font-size: 100%;
 }
 
 .bola {
@@ -625,6 +638,89 @@ label {
     display: none;
 }
 
+@media screen and (max-width: 1000px) {
+
+    .posicionamento_producao {
+
+        display: none;
+    }
+
+    .posicionamento_producao2 {
+        display: flex;
+        justify-content: flex-start;
+        width: 35%;
+        height: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .esquerdo2 {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .posicionamento_legenda2 {
+        width: 63%;
+    }
+
+    .posicionamento_legenda p {
+
+        font-size: 100%;
+    }
+
+    .bola2 {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .meio2 {
+        width: 90%;
+        /* height: 100%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .direito2 {
+        display: flex;
+        width: 50%;
+        height: 50%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .producao2,
+    .custo2 {
+        border: 1px double;
+        display: flex;
+        width: 40%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 5%;
+        justify-content: center;
+    }
+
+    #linha-vertical2 {
+        width: 90%;
+        border-bottom: 1px solid red;
+    }
+
+    #circulo {
+        background: lightblue;
+        border-radius: 50%;
+        width: 1vw;
+        height: 2vh;
+
+    }
+}
 
 @media screen and (max-width: 768px) {
 
@@ -654,22 +750,27 @@ label {
         justify-content: center;
         height: 100vh;
         width: 90%;
+        align-items: center;
     }
 
     .respon_esquerdo {
-        width: 90%;
+        width: 95%;
+        height: 95%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
     .logo_respon {
+        display: flex;
+        width: 100%;
         height: 10%;
+        align-items: flex-end;
     }
 
     .logo_respon img {
-        height: 100%;
-        width: 5vw;
+        height: 80%;
+        width: 6%;
     }
 
     .posicionamentooptions_respon {
@@ -678,6 +779,7 @@ label {
         height: 10%;
         flex-direction: column;
         align-items: flex-start;
+        justify-content: flex-end;
     }
 
     .posicionamentoopcao_respon {
@@ -695,7 +797,10 @@ label {
     }
 
     .position_respon {
+        display: flex;
+        /* background-color: chartreuse; */
         height: 10%;
+        align-items: flex-end;
     }
 
     .position_respon h1 {
@@ -705,10 +810,10 @@ label {
     .posicionamentoproducao_respon {
         height: 7%;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         width: 60%;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-end;
     }
 
     .producao_respon,
@@ -716,10 +821,11 @@ label {
         display: flex;
         flex-direction: row;
         border: 1px solid black;
-        height: 100%;
-        width: 40%;
+        height: 60%;
+        width: 30%;
         justify-content: space-around;
         align-items: center;
+        margin-right: 5%;
     }
 
     .meio_respon {
@@ -732,12 +838,11 @@ label {
         width: 100%;
         height: 63%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .posicionamento_respon {
         display: flex;
-        justify-content: center;
         width: 100%;
         height: 100%;
         flex-direction: row;
@@ -746,17 +851,17 @@ label {
 
     .posicionamentografico_respon {
         display: flex;
-        width: 100%;
-        height: 90%;
-        flex-direction: column;
-        justify-content: center;
+        width: 75%;
+        height: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
     }
 
     .grafimg_respon {
         display: flex;
         width: 100%;
         height: 100%;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
     }
 
@@ -766,8 +871,8 @@ label {
     }
 
     .posicionamentocarros_respon {
-        width: 40%;
-        height: 85%;
+        width: 25%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -777,11 +882,11 @@ label {
     .demonstrativo_respon {
         border-radius: 10px;
         background-color: #E0E9F0;
-        width: 50%;
-        height: 30%;
+        width: 85%;
+        height: 27%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
     }
 
@@ -795,7 +900,8 @@ label {
     }
 
     .demimg_respon img {
-        width: 80%;
+        width: 90%;
+        height: 100%;
     }
 
     .respon_direito {
