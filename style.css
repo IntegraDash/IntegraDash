@@ -38,7 +38,6 @@
 
 .logo_integradash_desktop {
     width: 40px;
-    height: 40px;
     margin: 30px 10px 0 20px;
 
 }
@@ -254,7 +253,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 .menu_hamburguer{
     margin-top: 25px;
-    width: 50px;
+    width: 35px;
 }
 
 .edicao_foto_usuario2{
@@ -286,6 +285,14 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 .icone_mob {
     width: 25px;
+}
+    
+.icone_mob:hover {
+    background-color: rgb(55, 139, 218);
+}
+
+.hover_fav {
+background-color: rgb(55, 139, 218);
 }
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -374,8 +381,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
         display: none;
     }
 }
-
-     
+ 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                R E S P O N S I V O   3
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
@@ -408,7 +414,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
     }
 }
  
-
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                R E S P O N S I V O   5
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
@@ -493,9 +498,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
     }
 }
  
-
-
-
 /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                OBSERVAÇÕES GERAIS 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
