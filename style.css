@@ -357,6 +357,11 @@ img {
     height: 90%;
 }
 
+.planta_img,
+.perfil_img {
+    display: flex;
+}
+
 .planta img {
     width: 70%;
 }
@@ -652,6 +657,11 @@ label {
 
     .posicionamento_producao {
 
+        display: none;
+    }
+
+    .planta_img,
+    .perfil_img {
         display: none;
     }
 
