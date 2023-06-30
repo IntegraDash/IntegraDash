@@ -80,7 +80,7 @@ header {
 
 .folders {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   padding: 20px;
 }
@@ -108,10 +108,6 @@ header {
   color: white;
   text-decoration: none;
   margin-top: 10px;
-}
-
-.menu .icon i {
-  font-size: 25px;
 }
 
 /* Mobile */
@@ -148,11 +144,8 @@ header {
   margin-top: 0;
 }
 
-/* .resp_icon {
-  width: 22px;
-} */
-
 @media screen and (max-width: 768px) {
+  
   .menu-master {
     flex-direction: column;
   }
@@ -179,7 +172,7 @@ header {
   }
 
   .corpo {
-    padding: 75px;
+    padding: 25px 160px 0 45px;
   }
 
   .buscador input[type="text"] {
@@ -187,9 +180,6 @@ header {
     max-width: 300px;
   }
 
-  .folders {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
 .resp_foto{
   width: 60px;
