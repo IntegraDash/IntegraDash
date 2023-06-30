@@ -8,22 +8,19 @@
 body {
     height: 100vh;
 }
-.menu{
+
+/* .menu {
     display: flex;
-    width: 200px;
+    width: 230px;
     justify-content: space-between;
     height: 95vh;
-    padding: 10px;
+    padding: 20px;
     flex-direction: column;
     background-color: #003d73;
-}
-
-.menu .icon{
-    font-size: 30px;
-}
+} */
 
 nav.menu-lateral {
-    width: 170px;
+    width: 175px;
     height: 100%;
     background-color: #003d73;
     box-shadow: 2px 0 0 #000000;
@@ -33,6 +30,12 @@ nav.menu-lateral {
     left: 0;
     overflow: hidden;
     transition: .2s;
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-direction: column;
+    font-size: 15px;
 }
 
 nav.menu-lateral:hover {
@@ -70,7 +73,7 @@ ul li.item-menu a {
     font-size: 20px;
     /* padding: 22px 4%; */
     display: flex;
-    /* margin-bottom: 15px; */
+    margin-bottom: 15px;
     /* line-height: 40px; */
 }
 
@@ -83,31 +86,29 @@ ul li.item-menu a .icon>i {
     margin-left: 10px;
 }
 
-.caixa1{
-/* height: 30px; */
-margin-bottom: 25px;
+.conteiner {
+    width: 55%;
 }
 
-.caixa2{
-    /* height: 50px; */
-}
-
-.conteiner{
-    width: 65%;
-}
-
-.menu-lateral p{
+.menu-lateral p {
     color: #fff;
     background-color: #053155;
     height: 20px;
+    padding-left: 5px;
+    margin: 15px;
 }
 
-.btn-expandir{
+.btn-expandir img {
+    width: 30px;
+
+}
+
+.btn-expandir {
     display: flex;
-    align-items: end;
+    align-items: baseline;
 }
 
-section{
+section {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -116,77 +117,25 @@ section{
     padding-bottom: 30px;
 }
 
-.linha1{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.linha2{
-    display: flex;
-    justify-content: space-between;
-}
-
-.secao1 {
-    width: 422px;
-    height: 275px;
-    margin-bottom: 20px;
-}
-
-.secao2 {
-    width: 422px;
-    height: 275px;
-}
-
-.secao3 {
-    width: 422px;
-    height: 275px;
-    margin-bottom: 20px;
-}
-
-.secao4 {
-    width: 422px;
-    height: 275px;
+.conteiner .edit {
+    width: 400px;
+    padding: 20px 20px 20px 20px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
 }
 
 @media screen and (max-width: 768px) {
+    .conteiner .edit {
+        width: 95vh;
+        padding: 20px 20px 20px 105px;
+    }
+
+    .menu{
+        display: none;
+    }
+
     section {
         flex-direction: column;
-        width: 800px;
+        width: 70%;
     }
-
-    .linha1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .linha2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .secao3,.secao1{
-        margin-bottom: 20px;
-    }
-}
-
-.linha1 img{
-    max-width: 424px;
-    width: 100%;
-}
-
-.linha2 img{
-    max-width: 424px;
-    width: 100%;
-}
-.linha3 img{
-    max-width: 424px;
-    width: 100%;
-}
-.linha4 img{
-    max-width: 424px;
-    width: 100%;
 }
