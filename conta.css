@@ -30,33 +30,25 @@ body {
     justify-content: center;
     /* background-color: yellowgreen; */
     padding: 4%;
-    height: 30%;
+    /* height: 30%; */
     align-items: flex-end;
     margin-top: 50px;
 
 }
 
-xxxxxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxxxxxxx
 
-..Texto_recuperacao {
-    font-weight: 900;
+.Texto_recuperacao {
+    font-size: 22px;
+    margin-left: 8px;
     
-    xxxxxxxxxxxxxxxxxxxx
-    xxxxxxxxxxxxxxxxxx
-    xxxxxxxxxxxxxxxxxxxx
+
 }
 
-.imagen1 img {
+/* .imagen1 img {
     width: 39%;
     height: 80%;
     margin-top: 50px;
-}
-.imagen2{
-    background-color:aqua ;
-}
+} */
 
 form {
 
@@ -73,9 +65,14 @@ form {
 input {
     width: 300px;
     height: 30px;
-
 }
 
+.logo_principal {
+    height: 130px;
+    margin-top: 50px;
+
+
+}
 
 button {
     margin-top: 20px;
@@ -110,11 +107,13 @@ button {
 }
 
 .recuperadcaodeconta1 {
-    padding: 59px;
+    /* padding: 59px; */
     display: flex;
     flex-direction: column;
     align-items: center; 
     height: 60%;
+    align-items: center;
+    margin-top: 30px;
     
    
 }
@@ -204,9 +203,11 @@ button {
     }
 
     .esquerda {
-        background-image: url(../Integradash/img/Fundo\ dash.png);
+        background-image: url(img/testeFUNDOmobile.png);
         background-repeat: no-repeat;
         width: 100%;
+        background-size: cover;
+        
     }
 
     .rodape {
