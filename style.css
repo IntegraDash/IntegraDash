@@ -177,8 +177,7 @@ article:hover {
 }
 
 .posicionamento_img {
-    background-color: var(--azulsecundario
-    );
+    background-color: var(--azulsecundario);
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -350,14 +349,12 @@ img {
 
 .planta,
 .perfil {
-
     border-radius: 10px;
     background-color: var(--branco);
     display: flex;
     align-items: center;
-    width: 18%;
+    width: 15%;
     height: 90%;
-
 }
 
 .planta img {
@@ -397,6 +394,10 @@ ul {
     list-style: none;
 }
 
+li {
+    margin: 2% 0;
+}
+
 .select img {
     width: 20px;
 }
@@ -406,14 +407,13 @@ input[type="checkbox"] {
 }
 
 nav {
-    background-color: rgba(255, 255, 255, .5);
+    background-color: lightblue;
     border-radius: 10px;
-    width: 16.1%;
-    height: 27%;
-    top: -61%;
+    width: 12%;
+    height: 15%;
+    top: -50%;
     position: absolute;
-
-    transition: all .5s;
+    transition: all .2s;
 }
 
 
@@ -422,7 +422,7 @@ input[type="checkbox"]:checked~nav {
 }
 
 ul {
-    top: 70px;
+    top: 40%;
     position: absolute;
     width: 100%;
 }
