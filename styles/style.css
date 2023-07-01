@@ -463,7 +463,7 @@ input[type=range] {
 
 /* RESPONSIVIDADE */
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 769px) {
     body {
         background-color: var(--branco);
     }
@@ -483,7 +483,8 @@ input[type=range] {
 
     aside {
         align-items: center;
-        border-radius: 20px;
+        /* border-radius: 20px; */
+        border-radius: 20px 0 0 20px;
         padding-left: 0;
         padding-right: 0;
         width: 30%;
@@ -641,8 +642,6 @@ input[type=range] {
         padding-left: 0;
     }
     
-    /* colocar cada um na ordem com classes */
-    
     .ordem {
         display: flex;
         flex-direction: column;
@@ -673,15 +672,39 @@ input[type=range] {
     a .logo {
         display: none;
     }
-    
+
+    /* .grid-a {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .grid-b {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .grid-c {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+    .grid-d {
+        grid-area: 1 / 4 / 2 / 5;
+    } */
+
+
     /* SLIDER */
     
-    
-    
-    /* .slider{
+    .slider{
+        display: grid;
+        /* flex-direction: column; */
+        grid-template-columns: repeat(10, 1fr);
+        /* grid-column: none; */
+        grid-template-rows: repeat(1, 2fr);
+        grid-column-gap: 0;
+        grid-row-gap: 20px;
         overflow: hidden;
-        
-    } */
+        width: 98%;
+    }
+
+    .slider-content {
+        grid-area: 2 / 1 / 3 / 5;
+    }
+
     .slider > .slider-content{
         display: flex;
         flex-wrap: nowrap;
@@ -700,22 +723,23 @@ input[type=range] {
     
     .slider > input:nth-child(1):checked ~ .slider-content{
         transform: translateX(0%);
-        overflow-x: clip;
+        /* overflow-x: clip; */
     }
     
     .slider > input:nth-child(2):checked ~ .slider-content{
-        transform: translateX(-60%);
+        transform: translateX(-118%);
         /* overflow-anchor: ; */
+        /* overflow-x: clip; */
         
     }
     
     
     .slider > input:nth-child(3):checked ~ .slider-content{
-        transform: translateX(-120%);
+        transform: translateX(-289%);
     }
     
     .slider > input:nth-child(4):checked ~ .slider-content{
-        transform: translateX(-180%);
+        transform: translateX(-450%);
     }
     
     .tempo-real {
@@ -818,6 +842,76 @@ input[type=range] {
     }
 }
 
+/* max-width: 479px */
+
+
+@media screen and (max-width: 479px) {
+    aside {
+        width: 40%;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .menu-hamb {
+        width: 30px;
+    }
+
+    .logo-mobile {
+        width: 35px;
+    }
+
+    .inicio-resp {
+        padding: 30px 0 30px 15px;
+    }
+
+    .boas-vindas img {
+        width: 35%;
+    }
+
+    h1 {
+        font-size: 15px;
+        /* width: 80px; */
+    }
+
+    .bv {
+        margin-left: 15px;
+        max-width: 140px;
+    }
+
+    .bv p {
+        font-size: 12px;
+    }
+
+    .unidades {
+        width: 160px;
+        height: 35px;
+        padding: 10px;
+    }
+
+    .unidades span {
+        font-size: 10px;
+    }
+
+    .carro {
+        width: 30px;
+    }
+
+    .centro-p-linha {
+        display: none;
+     }
+
+    .slider {
+       display: none;
+    }
+
+    .tempo-real{
+       display: none;
+    }
+
+    .memoria {
+        display: none;
+    }
+
+}
 
 /* https://pt.stackoverflow.com/questions/265316/range-mudar-cor-da-barra-de-progresso-no-chrome */
 
