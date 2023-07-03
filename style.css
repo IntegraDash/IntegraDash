@@ -366,6 +366,13 @@ img {
     width: 90%;
 }
 
+.posicionamento_foto,
+.posicionamento_planta {
+    display: flex;
+    width: 80%;
+    justify-content: flex-start;
+}
+
 .planta_img,
 .perfil_img {
     display: flex;
@@ -375,7 +382,7 @@ img {
 .planta_img img,
 .perfil_img img {
 
-    width: 70%;
+    width: 45%;
 }
 
 /*.planta img {
@@ -389,7 +396,7 @@ img {
 
 .up {
     width: 100%;
-
+    height: 13%;
     display: flex;
     align-items: flex-start;
     flex-direction: row;
@@ -951,7 +958,7 @@ label {
         width: 100%;
         height: 30%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
         align-items: center;
     }
@@ -959,8 +966,8 @@ label {
     .demonstrativo_respon {
         border-radius: 10px;
         background-color: #E0E9F0;
-        width: 85%;
-        height: 27%;
+        width: 30%;
+        height: 50%;
         display: flex;
         flex-direction: row;
         justify-content: center;
