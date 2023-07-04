@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .menu {
+    display: flex;
+    width: 230px;
+    justify-content: space-between;
+    height: 95vh;
+    padding: 20px;
+    flex-direction: column;
+    background-color: #003d73;
+} */
+
+nav.menu-lateral {
+    width: 175px;
+    height: 100%;
+    background-color: #003d73;
+    box-shadow: 2px 0 0 #000000;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+nav.menu-lateral:hover {
+    width: 220px;
+}
+
+
+.btn-expandir {
+    width: 74%;
+    padding-left: 0px;
+}
+
+.btn-expandir>i {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: .2s;
+}
+
+ul li.item-menu:hover {
+    background: #1B77C2;
+}
+
+ul li.item-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    /* padding: 22px 4%; */
+    display: flex;
+    margin-bottom: 15px;
+    /* line-height: 40px; */
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 40px;
+}
+
+ul li.item-menu a .icon>i {
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.conteiner {
+    width: 67%;
+}
+
+.menu-lateral p {
+    color: #fff;
+    background-color: #053155;
+    height: 20px;
+    padding-left: 5px;
+    margin: 15px;
+}
+
+.btn-expandir img {
+    width: 30px;
+
+}
+
+.btn-expandir {
+    display: flex;
+    align-items: baseline;
+}
+
+section {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+}
+
+.conteiner .edit {
+    width: 400px;
+    padding: 20px 20px 20px 20px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+@media screen and (max-width: 1268px) {
+    .conteiner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+    }
+
+    nav.menu-lateral{
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .conteiner .edit {
+        width: 95vh;
+        padding: 20px 20px 20px 105px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    section {
+        flex-direction: column;
+        width: 70%;
+    }
+}
