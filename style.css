@@ -7,6 +7,8 @@
 
 body {
     height: 100vh;
+    display: flex;
+    justify-content: space-around;
 }
 
 /* .menu {
@@ -30,7 +32,7 @@ nav.menu-lateral {
     left: 0;
     overflow: hidden;
     transition: .2s;
-    
+
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -87,7 +89,7 @@ ul li.item-menu a .icon>i {
 }
 
 .conteiner {
-    width: 55%;
+    width: 67%;
 }
 
 .menu-lateral p {
@@ -110,11 +112,12 @@ ul li.item-menu a .icon>i {
 
 section {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 50px;
 }
 
 .conteiner .edit {
@@ -124,13 +127,26 @@ section {
     align-items: center;
 }
 
+@media screen and (max-width: 1268px) {
+    .conteiner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+    }
+
+    nav.menu-lateral{
+        width: 160px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .conteiner .edit {
         width: 95vh;
         padding: 20px 20px 20px 105px;
     }
 
-    .menu{
+    .menu {
         display: none;
     }
 
