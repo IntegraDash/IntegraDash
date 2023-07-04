@@ -57,6 +57,7 @@ body {
 
 .coracaocinho {
   position: relative;
+  margin: 20px;
 }
 
 
@@ -228,17 +229,11 @@ ul {
   display: none;
 }
 
-.cinco {
-  display: none;
-}
-
-.tres {
-  display: none;
-}
 
 .analises {
   display: none;
 }
+
 /* Month header */
 
 .calendario {
@@ -459,10 +454,10 @@ ul {
     margin: 70px;
     padding: 10px;
 }
-  }
-  
-.cinco  {
+.cinco   {
   width: 40px;
+  display: flex;
+
 }
 .analises {
   display: flex;
@@ -480,8 +475,12 @@ ul {
 
 .tres  {
 width: 40px;
+display: flex;
 }
 
+
+  }
+  
 
 
 
