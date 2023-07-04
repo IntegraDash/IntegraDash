@@ -3,15 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
-
 }
 
 body {
     display: flex;
     justify-content: space-between;
     background-color: #003D73;
- 
-
 }
 
 .esquerda {
@@ -22,7 +19,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
 .imagen1 {
@@ -33,15 +29,12 @@ body {
     /* height: 30%; */
     align-items: flex-end;
     margin-top: 50px;
-
 }
 
 
 .Texto_recuperacao {
-    font-size: 22px;
-    margin-left: 8px;
-    
-
+    font-size: 23px;
+    margin-left: 8px; 
 }
 
 /* .imagen1 img {
@@ -51,7 +44,6 @@ body {
 } */
 
 form {
-
     display: flex;
     flex-direction: column;
     max-height: 400px;
@@ -70,17 +62,13 @@ input {
 .logo_principal {
     height: 130px;
     margin-top: 50px;
-
-
 }
 
 button {
     margin-top: 20px;
     background-color: #1B77C2;
     color: white;
-    width: 210px;
     border: none;
-
 }
 
 .recuperacao_deconta {
@@ -91,8 +79,8 @@ button {
     align-content: space-around;
     flex-direction: column;
     margin-top: 20px;
-
 }
+
 .Pronto{
     margin-left: 10px;
 }
@@ -114,8 +102,6 @@ button {
     height: 60%;
     align-items: center;
     margin-top: 30px;
-    
-   
 }
 
 .recuperadcaodeconta1 p {
@@ -134,22 +120,21 @@ button {
     padding: 11px;
     text-align: center;
     margin-top: 30px;
-    width: 236px
+    width: 225px;
+    margin-right: 8px;
 }
-
 
 .rodape {
     margin-bottom: 20px;
     justify-content: center;
     display: flex;  
     color: #938686;
-
 }
+
 .imagenrodape{
  margin-left: 5px;
  margin-bottom: px;
 }
-
 
 .direito {
     width: 55%;
@@ -164,85 +149,54 @@ button {
     align-items: end;
     width: 90%;
     height: 100%;
-
 }
 
 
 
 @media screen and (max-width: 900px) {
+
 .testeresponsividade {
     font-size: 12px;
-    }
+}
     
 .imagenrodape {
     width: 70px;
-    margin-left: 1px;
-   
+    margin-left: 1px;   
 }
+
+.recuperadcaodeconta1 {
+    /* padding: 59px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 60%;
+    align-items: center;
+    margin-top: 30px;
+}
+
+}
+
 
 
 @media screen and (max-width: 700px) {
-    .direito img {
-        width: 100%;
-        height: unset;
 
-    }
-
-
+body {
+    flex-direction: column;
 }
 
-@media screen and (max-width: 700px) {
-    body {
-        flex-direction: column;
-    }
-
-
-    .direito {
-        display: none;
-
-    }
-
-    .esquerda {
-        background-image: url(img/testeFUNDOmobile.png);
-        background-repeat: no-repeat;
-        width: 100%;
-        background-size: cover;
-        
-    }
-
-    .rodape {
-        display: none;
-
-
-    }
-
+.direito {
+    display: none;
 }
 
-@media screen and (max-width:400px) {
-
-    .conteudo_login {
-        width: 90%;
-
+.esquerda {
+    background-image: url(img/testeFUNDOmobile.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
     }
 
-    .conteudo_login img {
-        display: none;
-
+.rodape {
+    display: none;
     }
-
-    .imagen2 img {
-        display: flex;
-
-        width: 100%;
-
-    }
-
-    .imagen2 {
-        display: flex;
-        justify-content: center;
-
-    }
-
-
 
 }
