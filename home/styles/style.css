@@ -841,8 +841,13 @@ input[type=range] {
 
 
 @media screen and (max-width: 479px) {
+
+    main {
+        width: 70vh;
+    }
+
     aside {
-        width: 40%;
+        width: 10%;
         border-radius: 20px 0 0 20px;
     }
 
@@ -966,7 +971,25 @@ input[type=range] {
     }
 
     .memoria {
-        display: none;
+        
+    }
+
+    .i-mem span {
+        font-size: 14px;
+    }
+
+    .mem {
+        width: 270px;
+    }
+
+    .card-mem {
+        width: 100px;
+        padding: 5px 10px;
+        margin: 10px 0 10px 0;
+    }
+
+    .card-mem span {
+        font-size: 10px;
     }
 
 }
