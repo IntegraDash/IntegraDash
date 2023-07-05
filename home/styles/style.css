@@ -204,19 +204,30 @@ input[type=range] {
 }
 
 .centro-p-linha ul li{
-    width: 80px;
-    height: 35px;
-    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    width: 80px;
+    height: 35px;
+
+    border-radius: 10px;
+
     background-color: var(--branco);
+
     font-weight: 700;
+
+    cursor: pointer;
 }
+
 
 .centro-p-linha ul li:nth-child(3) {
     background-color: var(--azulC);
     color: var(--branco);
+}
+
+.centro-p-linha ul li:hover {
+    background-color: #8e9ba6;
 }
 
 .centro-lados {
@@ -226,8 +237,9 @@ input[type=range] {
 
 .lupa .lupa-input-centro {
     background-color: var(--branco);
-    border-radius: 10px;
     color: var(--preto);
+
+    border-radius: 10px;
     height: 40px;
 }
 
@@ -241,14 +253,17 @@ input[type=range] {
 }
 
 .alert {
-    border-radius: 10px;
-    background-color: var(--branco);
-    border: none;
-    width: 40px;
-    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: var(--branco);
+
+    width: 40px;
+    height: 40px;
 }
 
 .alert img {
@@ -394,12 +409,10 @@ input[type=range] {
 }
 
 .info {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
     width: 250px;
     height: 130px;
     padding: 10px;
+    
     background: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -689,6 +702,11 @@ input[type=range] {
 
     /* SLIDER */
     
+    input[type=radio] {
+        cursor: pointer;
+    }
+
+
     .slider{
         display: grid;
         /* flex-direction: column; */
@@ -843,11 +861,11 @@ input[type=range] {
 @media screen and (max-width: 479px) {
 
     main {
-        width: 70vh;
+        width: 100%;
     }
 
     aside {
-        width: 10%;
+        width: 20%;
         border-radius: 20px 0 0 20px;
     }
 
@@ -861,6 +879,7 @@ input[type=range] {
 
     .inicio-resp {
         padding: 30px 0 30px 15px;
+        width: 80%;
     }
 
     .boas-vindas img {
@@ -885,6 +904,7 @@ input[type=range] {
         width: 160px;
         height: 35px;
         padding: 10px;
+        cursor: pointer;
     }
 
     .unidades span {
@@ -908,7 +928,7 @@ input[type=range] {
 
         font-size: 10px;
 
-        width: 55px;
+        width: 50px;
         height: 30px;
     }
 
@@ -942,15 +962,15 @@ input[type=range] {
     }
     
     .slider > input:nth-child(2):checked ~ .slider-content{
-        transform: translateX(-204%);
+        transform: translateX(-240%);
     }
     
     .slider > input:nth-child(3):checked ~ .slider-content{
-        transform: translateX(-415%);
+        transform: translateX(-490%);
     }
     
     .slider > input:nth-child(4):checked ~ .slider-content{
-        transform: translateX(-570%);
+        transform: translateX(-740%);
     }
     
 
@@ -963,7 +983,7 @@ input[type=range] {
     }
 
     .planta {
-        width: 250px;
+        width: 265px;
     }
 
     .planta img {
