@@ -5,7 +5,6 @@
     font-family: 'Lato', sans-serif;
 }
 
-
 .paginatotal {
     height: 100vh  ;
     width: 100%;
@@ -19,7 +18,6 @@
     width: 100%;
 }
 
-
 .quadrado_branco {
     height: 100vh;
     width: 50%;
@@ -30,18 +28,14 @@
     flex-direction: column;
 }
 
-
 .Logo_Integradash {
-    height: 250px ;
-    width: 250px ;
-    margin-top: 70px;
+    height: 130px ;
+    margin-top: 50px;
     margin-bottom: 100px;
-    margin-left: 25px;
-
-
+    position: relative;
+    margin-left: 10px;
+    top: 40px
 }
-
-
 
 .clique_aqui {
     display: flex;
@@ -49,16 +43,13 @@
     font-size: 15px;
    margin-top: 10px;
    color: gray;
-   
 }
 
 .clique_aqui a {
     margin-left: 5px;
     color: #053155;
     text-decoration: none;
-    font-weight: 800;
-      
-
+    font-weight: 800;   
 }
 /* 
 .alinhamento_login {
@@ -69,19 +60,16 @@
 .alinhamento_input {
     display: flex;
     flex-direction: column;
-
-  
 }
 
 .negrito {
-
     font-weight: 900;
     font-size: 15px;
+    margin-bottom: 15px;
 }
 
 form {
 padding-bottom: 10px;
-
 }
 
 ::placeholder {
@@ -96,36 +84,27 @@ padding-bottom: 10px;
     width: 300px;
     font-size: 15px;
     border: none;
-
-
-           }
-
+}
 
 .zoinho {
     display: flex;
     flex-direction: column;
     position: relative;
-
-
+    margin-bottom: 10px;
 }
-
 
 .testefonte2{
-
-display: none;
-
+    display: none;
 }
 
- .botao_entrar:hover {
-    background-color: #3b6689;
-    
+.botao_entrar:hover {
+    background-color: #3b6689; 
  }
-
 
 .senha {
     margin-bottom: 10px;
     height: 35px;
-    width: 300px;
+    width: 296px;
     text-indent: 10px;
     font-size: 15px;
     border-color: rgba(96, 95, 95, 0.304);
@@ -142,12 +121,11 @@ display: none;
 
 .desenvolvido_por {
     height: 21px;
-    margin-top: 100px;
-    padding: 30px;
-
-
-
+    margin-top: 110px;
+    position: relative;
+    top: 5px;
 }
+
 .Logo_Claro {
     display: none;
 }
@@ -160,7 +138,7 @@ display: none;
 
     } */
 
-    .zoio{
+.zoio{
         cursor: pointer;
         position: absolute;
         width: 30px;
@@ -180,25 +158,25 @@ display: none;
 }
 
 .testezoom {
-
     width: 100%;
     height: 100%;
 }
+h1 {
+margin-bottom: 40px;
+
+}
+
 
 
 
 @media screen and (max-width: 950px) {
 
-
-
-    .quadrado_branco {
-        width:100% ;
-
+.quadrado_branco {
+    width:100% ;
 } 
 
 .pagina_metade1 { 
-    display: none;
-    
+    display: none; 
 }
 
 .quadrado_branco {
@@ -217,19 +195,16 @@ display: none;
     max-width: 250px;
     margin-top:100px;
     margin-left: 30px;
-
 }
 
 .alinhamento_input{ 
-
-margin-top: 80px;
-
+    margin-top: 80px;
 }
 
 /* TESTE PARA ALTERAR O TEXTO CONFORME DIMINUI A TELA */
 
 .testefonte {
-display: flex; /*none*/
+    display: flex; /*none*/
 }
 
 .testefonte2{
